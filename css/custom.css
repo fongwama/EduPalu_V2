@@ -1,12 +1,16 @@
 .mdl-mini-footer {
   color: rgb(158,158,158);
-  background-color: rgb(33,150,243) !important; }
+  background-color: rgb(33,150,243) !important; 
+  /*height: 56px !important;*/
+  color: rgb(250,250,250) !important;
+  padding: 0px 16px !important;
+} 
 
 /* Image card  */ 
 .demo-card-image.mdl-card {
   width: auto ;
   height: 100%;
-  background: url('img/menu_moustique.jpg') center / cover;
+  background: url('../img/menu_moustique.jpg') center / cover;
 }
 .demo-card-image > .mdl-card__actions {
   height: 52px;
