@@ -55,3 +55,6 @@
 .qui{
   background: url('../img/menu_sourire.jpg') center / cover;  
 }
+
+    .mdl-layout__header-row {
+      padding: 10px 16px 0 50px; }
