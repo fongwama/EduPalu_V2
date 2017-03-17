@@ -14,7 +14,6 @@
 .demo-card-image.mdl-card {
   width: auto ;
   height: 100%;
-  background: url('../img/menu_moustique.jpg') center / cover;
 }
 .demo-card-image > .mdl-card__actions {
   height: 52px;
@@ -25,4 +24,34 @@
   color: #fff;
   font-size: 14px;
   font-weight: 500;
+}
+.comprendre{
+  background: url('../img/menu_moustique.jpg') center / cover;  
+}
+.se_proteger{
+  background: url('../img/menu_moustiquaire.jpg') center / cover;  
+}
+.diagnostiquer{
+  background: url('../img/menu_tdr.jpg') center / cover;  
+}
+.se_soigner{
+  background: url('../img/menu_drug.jpg') center / cover;  
+}
+.pharmacie{
+  background: url('../img/menu_docteur.jpg') center / cover;  
+}
+.questions{
+  background: url('../img/menu_questions.jpg') center / cover;  
+}
+.quiz{
+  background: url('../img/menu_quiz.jpg') center / cover;  
+}
+.chasse{
+  background: url('../img/menu_technicien.jpg') center / cover;  
+}
+.comment{
+  background: url('../img/menu_clavier.jpg') center / cover;  
+}
+.qui{
+  background: url('../img/menu_sourire.jpg') center / cover;  
 }
