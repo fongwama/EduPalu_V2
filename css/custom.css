@@ -104,3 +104,6 @@
   background:
     url('../img/moustique_pique.jpg') center / cover no-repeat #46B6AC; 
 }
+.container_title{
+  padding: 0px 15px;
+}
