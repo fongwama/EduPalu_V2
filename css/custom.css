@@ -117,6 +117,30 @@
 .artemisia_annua{
   background: url('../img/artemisia_annua.jpg') center / cover no-repeat #46B6AC;
 }
+.drug{
+  background: url('../img/menu_drug.jpg') center / cover no-repeat #46B6AC;
+}
+.docteur{
+  background: url('../img/menu_docteur.jpg') center / cover no-repeat #46B6AC;
+}
+.questions{
+  background: url('../img/menu_questions.jpg') center / cover no-repeat #46B6AC;
+}
+.quiz{
+  background: url('../img/menu_quiz.jpg') center / cover no-repeat #46B6AC;
+}
+.technicien{
+  background: url('../img/menu_technicien.jpg') center / cover no-repeat #46B6AC;
+}
+.clavier{
+  background: url('../img/menu_clavier.jpg') center / cover no-repeat #46B6AC;
+}
+.sourire{
+  background: url('../img/menu_sourire.jpg') center / cover no-repeat #46B6AC;
+}
+.moustique{
+  background: url('../img/menu_moustique.jpg') center / cover no-repeat #46B6AC;
+}
 .container_title{
   padding: 0px 15px;
 }
