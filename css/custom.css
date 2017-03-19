@@ -98,9 +98,9 @@
 
 .parasite{
   background:
-    url('../img/parasite_palu.jpg') bottom right 15% no-repeat #46B6AC; 
+    url('../img/parasite_palu.jpg') center / cover no-repeat #46B6AC; 
 }
 .moustique_pique{
   background:
-    url('../img/moustique_pique.jpg') bottom right 15% no-repeat #46B6AC; 
+    url('../img/moustique_pique.jpg') center / cover no-repeat #46B6AC; 
 }
