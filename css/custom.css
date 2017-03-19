@@ -114,6 +114,9 @@
 .tdr{
     background: url('../img/TDR.jpg') center / cover no-repeat #46B6AC;
 }
+.artemisia_annua{
+  background: url('../img/artemisia_annua.jpg') center / cover no-repeat #46B6AC;
+}
 .container_title{
   padding: 0px 15px;
 }
