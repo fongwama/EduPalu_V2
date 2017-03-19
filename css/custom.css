@@ -59,10 +59,48 @@
     .mdl-layout__header-row {
       padding: 10px 16px 0 50px; }
 
-.container {
-  max-width: 900px;
-  padding: 20px 56px;
-  width: 100%;
-  margin: 0 auto;
+.mdl-container {
+  max-width: 900px; 
+  margin: auto;
   box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
-}      
+}  
+.mdl-container_text {
+  max-width: 90%;
+  padding: 0px 15px;
+}
+
+.text_container {
+ /* padding: 20px 56px;*/
+ padding: 0px 0px;
+  width: 100%;
+  margin:  0 auto;
+}    
+
+.full_img{
+  width: 100%%;
+  height: auto;
+}
+.mdl-layout__content {
+  padding: 15px 15px !important;
+}
+
+.mdl-grid {
+  padding: 0px !important;
+}
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+}
+
+.parasite{
+  background:
+    url('../img/parasite_palu.jpg') bottom right 15% no-repeat #46B6AC; 
+}
+.moustique_pique{
+  background:
+    url('../img/moustique_pique.jpg') bottom right 15% no-repeat #46B6AC; 
+}
