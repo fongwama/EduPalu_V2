@@ -111,6 +111,9 @@
 .moustiquaire{
     background: url('../img/moustiquaire.jpg') center / cover no-repeat #46B6AC;
 }
+.tdr{
+    background: url('../img/TDR.jpg') center / cover no-repeat #46B6AC;
+}
 .container_title{
   padding: 0px 15px;
 }
