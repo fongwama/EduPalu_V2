@@ -97,12 +97,19 @@
 }
 
 .parasite{
-  background:
-    url('../img/parasite_palu.jpg') center / cover no-repeat #46B6AC; 
+  background: url('../img/parasite_palu.jpg') center / cover no-repeat #46B6AC; 
 }
 .moustique_pique{
-  background:
-    url('../img/moustique_pique.jpg') center / cover no-repeat #46B6AC; 
+  background: url('../img/moustique_pique.jpg') center / cover no-repeat #46B6AC; 
+}
+.larves_moustiques{
+    background: url('../img/larves_moustiques.jpg') center / cover no-repeat #46B6AC; 
+}
+.pulverisation{
+    background: url('../img/pulverisation.jpg') center / cover no-repeat #46B6AC; 
+}
+.moustiquaire{
+    background: url('../img/moustiquaire.jpg') center / cover no-repeat #46B6AC;
 }
 .container_title{
   padding: 0px 15px;
