@@ -141,6 +141,35 @@
 .moustique{
   background: url('../img/menu_moustique.jpg') center / cover no-repeat #46B6AC;
 }
+.fongwama_logo{
+  background: url('../img/logo_fongwama.jpg') center / cover no-repeat #46B6AC;  
+}
+.ecair_logo{
+  background: url('../img/logo_fondation_ecair.jpg') center / cover no-repeat #46B6AC;  
+}
+.skepsos_logo{
+  background: url('../img/logo_skepsos.jpg') center / cover no-repeat #46B6AC;  
+}
+.azur_logo{
+  background: url('../img/logo_azur.jpg') center / cover no-repeat #46B6AC;  
+}
+.fcrm_logo{
+  background: url('../img/logo_fcrm.jpg') center / cover no-repeat #46B6AC;  
+  margin: 0 auto;
+}
+.pnlp_logo{
+  background: url('../img/logo_pnlp.jpg') center / cover no-repeat #46B6AC;  
+}
+.congotelecom_logo{
+  background: url('../img/logo_congo_telecom.jpg') center / cover no-repeat #46B6AC;  
+}
 .container_title{
   padding: 0px 15px;
+}
+
+.mdl-data-table td {
+  text-align: center !important;
+}
+.mdl-data-table {
+  width: 100%;
 }
