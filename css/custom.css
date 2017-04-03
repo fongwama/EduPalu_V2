@@ -89,7 +89,7 @@
 }
 
 .demo-card-square.mdl-card {
-  width: 320px;
+  width: inherit;
   height: 320px;
 }
 .demo-card-square > .mdl-card__title {
