@@ -1,0 +1,48 @@
+ #results {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+
+a { text-decoration: none; }
+
+a:hover{
+text-decoration : none;
+}
+
+
+
+#results place {
+    margin: 10px;
+    display: inline-block;
+    width: 50%;
+}
+
+#results ul a { display: block; position: relative; width: 100%; }
+
+.place h2 { 
+    font-size: 1.5em; 
+    color: #55678d; }
+    
+.place .city {
+    font-weight: bold; 
+}
+
+.place .tel {
+    bottom: 5px; 
+    left: 90px; 
+    font-size: 1.2em; 
+    font-weight: bold; 
+    color: #6ea247; 
+}
+
+
+/** basic media queries (support de differents type d'ecrans)**/
+@media only screen and (max-width: 480px) {
+  #resultat h2 { font-size: 1.75em; }
+}
+
