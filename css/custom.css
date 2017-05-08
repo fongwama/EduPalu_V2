@@ -1,10 +1,8 @@
 .mdl-mini-footer {
   color: rgb(158,158,158);
   background-color: rgb(33,150,243) !important; 
-  /*height: 56px !important;*/
   color: rgb(250,250,250) !important;
   padding: 10px 16px !important;
-  width: 100%;
 } 
 
 .align_center{
@@ -81,7 +79,7 @@
   height: auto;
 }
 .mdl-layout__content {
-  padding: 15px 15px !important;
+  padding: 0px 15px 0px 15px !important;
 }
 
 .mdl-grid {
@@ -186,4 +184,33 @@
 }
 .mdl-logo{
   margin-left: 10px;
+}
+.material-icons {
+  color: rgb(33,150,243);
+}
+.mdl-layout__header {
+  background-color: rgb(255, 255, 255);
+  color: rgb(33,150,243);
+}
+.bg_search{
+  background-color: rgb(33,150,243);
+}
+.search{
+  border: 1px solid #DDD;
+  background-color: white;
+  padding: 5px;
+}
+.search > i{
+  vertical-align: middle;
+}
+.search > input{
+  vertical-align: middle;
+  border: none;
+  width: 83%;
+}
+.mdl-card {
+  min-height: 150px !important;
+}
+.demo-card-image > .mdl-card__actions {
+  height: auto !important;
 }
