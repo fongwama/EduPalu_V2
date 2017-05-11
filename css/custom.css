@@ -179,6 +179,10 @@
   background-color: rgb(33,150,243) !important;
   color: white;
 }
+.mdl-navigation__link > i{
+  color: white !important;
+  margin-right: 10px;
+}
 .mdl-navigation__link{
   color: #999 !important;
 }
