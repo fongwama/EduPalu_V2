@@ -227,3 +227,6 @@
 .mdl-layout__drawer .mdl-navigation {
   padding-top: 0px !important; 
 }
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+  padding: 10px 16px;
+}
