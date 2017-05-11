@@ -17,7 +17,7 @@
 .demo-card-image > .mdl-card__actions {
   height: 52px;
 /*  padding: 16px;*/
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
 }
 .demo-card-image__filename {
   color: #fff;
@@ -184,7 +184,7 @@
   margin-right: 10px;
 }
 .mdl-navigation__link{
-  color: #FFF !important;
+  color: #999 !important;
 }
 .mdl-logo{
   margin-left: 10px;
@@ -221,8 +221,8 @@
 
 .mdl-layout__drawer > .mdl-layout__title, .mdl-layout__drawer > .mdl-layout-title {
   background-color: #fff;
-  height: 18%;
-  padding-top:  10px;
+  padding-top:  20px;
+  padding-bottom: 20px;  
 }
 .mdl-layout__drawer .mdl-navigation {
   padding-top: 0px !important; 
@@ -232,4 +232,7 @@
 }
 .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
   background-color: rgba(116, 194, 255, 0.57) !important;
+}
+.link_color{
+  color: #999;
 }
