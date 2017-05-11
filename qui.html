@@ -22,6 +22,26 @@
 	      <!-- Add spacer, to align navigation to the right -->
 	      <div class="mdl-layout-spacer"></div>
 	      <!-- Navigation. We hide it in small screens. -->
+			<div class="mdl-layout--small-screen-only">
+			  <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
+          	  	<i class="material-icons">location_on</i>
+        	  </label>
+		      <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
+          	  	<i class="material-icons">search</i>
+        	  </label>
+				<!-- Right aligned menu below button -->
+				<button id="demo-menu-lower-right"
+				        class="mdl-button mdl-js-button mdl-button--icon">
+				  <i class="material-icons">more_vert</i>
+				</button>
+				<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+				    for="demo-menu-lower-right">
+				  <li class="mdl-menu__item">Mise-à-jour</li>
+				  <li class="mdl-menu__item">Comment</li>
+				  <li class="mdl-menu__item">A propos</li>
+				</ul>				
+			</div>	
+	      <!-- Navigation. We hide it in small screens. -->
 	      <nav class="mdl-navigation mdl-layout--large-screen-only">
 	        <a class="mdl-navigation__link" href="">Trouver une pharmacie</a>
 	        <a class="mdl-navigation__link" href="">Trouver un CSI</a>
@@ -32,15 +52,19 @@
 	    </div>
 	  </header>
 	  <div class="mdl-layout__drawer">
-	    <span class="mdl-layout-title">EduPalu</span>
+	    <span class="mdl-layout-title"><img src="img/logo.png" alt="EduPalu logo"></span>
 	    <nav class="mdl-navigation">
-	      <a class="mdl-navigation__link" href=""><i class="material-icons">local_pharmacy</i> Trouver une pharmacie</a>
-	      <a class="mdl-navigation__link" href=""><i class="material-icons">local_hospital</i> Trouver un CSI</a>
-	      <a class="mdl-navigation__link" href=""><i class="material-icons">add_circle</i> Ajouter un centre de santé</a>	      
-	      <a class="mdl-navigation__link" href=""><i class="material-icons">help_outline</i> Comment ?</a>
+	      <a class="mdl-navigation__link" href="comprendre.html"><i class="material-icons">description</i>Comprendre</a>
+	      <a class="mdl-navigation__link" href="se_proteger.html"><i class="material-icons">warning</i>Se protéger</a>
+	      <a class="mdl-navigation__link" href="diagnostiquer.html"><i class="material-icons">find_in_page</i>Diagnostiquer</a>	      
+	      <a class="mdl-navigation__link" href=""><i class="material-icons">healing</i>Se soigner</a>
+	      <a class="mdl-navigation__link" href="question_reponses.html"><i class="material-icons">forum</i>Questions / Réponses</a>
+	      <a class="mdl-navigation__link" href="quiz_play.html"><i class="material-icons">games</i>Le quiz</a>
+	      <a class="mdl-navigation__link" href=""><i class="material-icons">extension</i>Chasse aux parasites</a>	      			     
+	      <a class="mdl-navigation__link" href="comment.html"><i class="material-icons">copyright</i>Comment ?</a>
 	      <a class="mdl-navigation__link" href="qui.html"><i class="material-icons">info</i> A propos</a>
 	    </nav>
-	  </div>
+	  </div> 
 	    <div class="page-content">	
 			<div class="mdl-grid bg_search">
 			  <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
