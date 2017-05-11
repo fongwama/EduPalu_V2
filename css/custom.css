@@ -218,3 +218,9 @@
 .demo-card-image > .mdl-card__actions {
   height: auto !important;
 }
+
+.mdl-layout__drawer > .mdl-layout__title, .mdl-layout__drawer > .mdl-layout-title {
+  background-color: #fff;
+  height: 20%;
+  padding-top:  10px;
+}
