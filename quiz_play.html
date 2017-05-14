@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EduPalu .:. Bienvenue</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-light_blue.min.css" /> 
+	<link rel="stylesheet" href="css/custom.css" /> 
+	<link rel="stylesheet" href="css/cmaterial-design-iconic-font.css" /> 
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link href="css/quiz_style.css" rel="stylesheet" />
+    <script type="text/javascript" src="data/quiz_questions.json"></script>
+    <script type="text/javascript" src="js/quiz_engine.js"></script>	
+</head>
+<body onload="quiz_play();">
+
+	<!-- Always shows a header, even in smaller screens. -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	  <header class="mdl-layout__header">
+	    <div class="mdl-layout__header-row">
+	      <!-- Title -->
+	      <span class="mdl-logo"><a href="index.html"><img src="img/logo.png" alt=""></a></span>
+	      <!-- Add spacer, to align navigation to the right -->
+	      <div class="mdl-layout-spacer"></div>
+	      <!-- Navigation. We hide it in small screens. -->
+			<div class="mdl-layout--small-screen-only">
+			  <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
+          	  	<i class="material-icons">location_on</i>
+        	  </label>
+		      <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
+          	  	<i class="material-icons">search</i>
+        	  </label>
+				<!-- Right aligned menu below button -->
+				<button id="demo-menu-lower-right"
+				        class="mdl-button mdl-js-button mdl-button--icon">
+				  <i class="material-icons">more_vert</i>
+				</button>
+				<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+				    for="demo-menu-lower-right">
+				  <li class="mdl-menu__item"><a href="comment.html">Comment</a></li>
+				  <li class="mdl-menu__item"><a href="qui.html">A propos</a></li>
+				</ul>				
+			</div>	
+	      <!-- Navigation. We hide it in small screens. -->
+	      <nav class="mdl-navigation mdl-layout--large-screen-only">
+	        <a class="mdl-navigation__link" href="">Trouver une pharmacie</a>
+	        <a class="mdl-navigation__link" href="">Trouver un CSI</a>
+	        <a class="mdl-navigation__link" href="">Ajouter un centre de santé</a>
+	        <a class="mdl-navigation__link" href="">Comment ?</a>
+	        <a class="mdl-navigation__link" href="">A propos</a>
+	      </nav>
+	    </div>
+	  </header>
+	  <div class="mdl-layout__drawer">
+	    <span class="mdl-layout-title"><img src="img/logo.png" alt="EduPalu logo"></span>
+	    <nav class="mdl-navigation">
+	      <a class="mdl-navigation__link" href="comprendre.html"><i class="material-icons">description</i>Comprendre</a>
+	      <a class="mdl-navigation__link" href="se_proteger.html"><i class="material-icons">warning</i>Se protéger</a>
+	      <a class="mdl-navigation__link" href="diagnostiquer.html"><i class="material-icons">find_in_page</i>Diagnostiquer</a>	      
+	      <a class="mdl-navigation__link" href=""><i class="material-icons">healing</i>Se soigner</a>
+	      <a class="mdl-navigation__link" href="question_reponses.html"><i class="material-icons">forum</i>Questions / Réponses</a>
+	      <a class="mdl-navigation__link" href="quiz_play.html"><i class="material-icons">games</i>Le quiz</a>
+	      <a class="mdl-navigation__link" href=""><i class="material-icons">extension</i>Chasse aux parasites</a>	      			     
+	      <a class="mdl-navigation__link" href="comment.html"><i class="material-icons">copyright</i>Comment ?</a>
+	      <a class="mdl-navigation__link" href="qui.html"><i class="material-icons">info</i> A propos</a>
+	    </nav>
+	  </div> 
+	    <div class="page-content">	
+			<div class="mdl-grid bg_search">
+			  <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+				<div class="search">
+				    <i class="material-icons">search</i>
+				    <input type="text" placeholder="Rechercher une pharmacie, un CSI, un hôpital...">
+				</div>
+			  </div>
+			</div>	
+	    </div>		  
+	  <main class="mdl-layout__content">
+	    <div class="page-content mdl-container">	
+		<div class="mdl-container_text">
+			<div id="question_header">
+            <div id="question_nb">
+                Question <span id="question_nb_value"></span>
+            </div>
+            <div id="question_timer">
+                Temps restant : <span id="question_timer_value"></span>
+            </div>
+        </div>
+        <div id="question_body">
+            <div id="question_text"></div>
+            <div id="answers"></div>
+        </div>
+        <div id="question_comment">
+            <div id="comment_1"></div>
+            <div id="comment_2"></div>
+        </div>
+        <div id="question_footer"> 
+            <div id="question_score">
+                Score : <span id="question_score_value"></span>
+            </div>
+            <div id="question_next_replay">
+            </div>
+        </div>
+		</div>
+
+
+	    </div>
+		    
+	  </main>
+		  	<footer class="mdl-mini-footer mdl-layout--large-screen-only">
+		  <div class="mdl-mini-footer__left-section">
+		    <ul class="mdl-mini-footer__link-list">
+		      <li><a href="#">Fongwama - 2017</a></li>
+		    </ul>
+		  </div>
+		</footer>
+	</div>
+		
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+</body>
+</html>
