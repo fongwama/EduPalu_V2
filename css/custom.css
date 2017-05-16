@@ -237,6 +237,14 @@
 .link_color{
   color: #999;
 }
-.center{
+.center {
   text-align: center;
+  margin: auto;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+img {
+  /* vertical-align: middle; */
+  width: 100%;
+  height: auto;
 }
