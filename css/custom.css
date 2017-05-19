@@ -185,17 +185,17 @@
   margin-right: 10px;
 }
 .mdl-navigation__link{
-  color: #999 !important;
+  color: #FFF !important;
 }
 .mdl-logo{
   margin-left: 10px;
 }
 .material-icons {
-  color: rgb(33,150,243);
+  color: #FFF;
 }
 .mdl-layout__header {
-  background-color: rgb(255, 255, 255);
-  color: rgb(33,150,243);
+  background-color: rgb(33,150,243);
+  color: rgb(255, 255, 255);
 }
 .bg_search{
   background-color: rgb(33,150,243);
