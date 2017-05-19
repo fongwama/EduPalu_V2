@@ -26,7 +26,9 @@ text-decoration : none;
 
 .place h2 { 
     font-size: 1.5em; 
-    color: #55678d; }
+    color: #55678d; 
+    margin: 20px 0px 10px;
+  }
     
 .place .city {
     font-weight: bold; 
