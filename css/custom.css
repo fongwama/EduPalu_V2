@@ -285,3 +285,6 @@ input.search_page{
 .panel-body {
   padding: 15px;
 }
+.blue_color{
+  color: rgb(33,150,243) !important;
+}
