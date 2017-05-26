@@ -288,3 +288,11 @@ input.search_page{
 .blue_color{
   color: rgb(33,150,243) !important;
 }
+a {
+  color: #FFF;
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
