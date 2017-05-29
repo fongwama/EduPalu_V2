@@ -16,7 +16,7 @@ EduPalu est disponible en ligne, pour Windows / Mac / Linux et pour les smartpho
 
 Utilisez EduPalu en ligne en cliquant sur le lient suivant : [fongwama.github.io/EduPalu](http://fongwama.github.io/EduPalu/)
 
-## Version PC (et Mac aussi)
+## Version  Windows / Mac
 
 - Téléchargez la dernière version de Edupalu en cliquant sur le lien suivant : [EduPalu-master.zip](https://github.com/fongwama/EduPalu/archive/master.zip)
 - Décompressez le fichier `EduPalu-master.zip` que vous avez téléchargé (sous Windows, en cliquant droit sur le fichier puis en sélectionnant `Extraire tout...`). L'application sera dans le répertoire `EduPalu-master`.
