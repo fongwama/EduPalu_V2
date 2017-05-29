@@ -72,7 +72,7 @@ $(document).ready(function(){
         for (var i=0; i < results.length; i++) {
            // row ${i}
            content += "<div class='place'>";
-           content += "<h4>"+results[i].name +"</h2>";
+           content += "<h6>"+results[i].name +"</h6>";
            content += "</div>";
         };
 
