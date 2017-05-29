@@ -109,7 +109,11 @@ $(document).ready(function(){
         var query_field = $("#input_search").val().trim().toLowerCase().latinise(); 
         
         	//Start searching from the second key press
-        	searchPharmaMain(query_field);
+        	if(query_field.length>0) {
+        		searchPharmaMain(query_field);
+        	} else {
+        		$("#search_bar_results").html("");
+        	}
          
     });
 
