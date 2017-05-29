@@ -1,7 +1,7 @@
 /*
  * CopyRight Fongwama - www.fongwama.com / www.github.com/fongwama
  */
- 
+
 // from http://stackoverflow.com/questions/286921/efficiently-replace-all-accented-characters-in-a-string
 // http://semplicewebsites.com/removing-accents-javascript
 var Latinise={};
@@ -55,6 +55,31 @@ $(document).ready(function(){
 
     }
 
+        //search the pharmacy from main search-bar 
+    function searchPharmaMain(query_field){
+
+    		// build query, condition, name like (name.$li)
+        re = new RegExp(query_field, "i");
+        var query = "db.where({'name.$li': " + re + "}).or({'address_full.$li': " + re + "}).exec()";
+
+        // build results content (construction du résultat de la recherche)
+        var content = "";
+
+        // evaluation of builded query
+        results = eval(query);
+
+        // Construction des item de la recherche (résultat)
+        for (var i=0; i < results.length; i++) {
+           // row ${i}
+           content += "<div class='place'>";
+           content += "<h4>"+results[i].name +"</h2>";
+           content += "</div>";
+        };
+
+        
+        $("#search_bar_results").html(content);
+
+    }
 
     // When search by pharmacy name
     $("#btn_search").click(function() {
@@ -76,6 +101,18 @@ $(document).ready(function(){
         	searchPharma(query_field);
          
     });
+
+    // Search at every key press in the App main SearchBar
+    $("#input_search").keyup( function() {
+
+    		 // clean input field
+        var query_field = $("#input_search").val().trim().toLowerCase().latinise(); 
+        
+        	//Start searching from the second key press
+        	searchPharmaMain(query_field);
+         
+    });
+
 
     $("#btn_search_near").click(function() {
         

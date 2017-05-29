@@ -205,14 +205,26 @@
   background-color: white;
   padding: 5px;
 }
+
 .search > i{
   vertical-align: middle;
 }
+
 .search > input{
   vertical-align: middle;
   border: none;
   width: 83%;
 }
+
+.search_bar_results {
+  position: absolute;
+  z-index: 1000;
+  max-height: 100%;
+  overflow: scroll;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
 .mdl-card {
   min-height: 150px !important;
 }
