@@ -1,3 +1,7 @@
+/*
+ * CopyRight Fongwama - www.fongwama.com / www.github.com/fongwama
+ */
+ 
 // from http://stackoverflow.com/questions/286921/efficiently-replace-all-accented-characters-in-a-string
 // http://semplicewebsites.com/removing-accents-javascript
 var Latinise={};
