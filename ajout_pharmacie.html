@@ -4,14 +4,18 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>A propos .:. EduPalu</title>
+	<title>Jouer le quiz .:. Bienvenue</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-light_blue.min.css" /> 
 	<link rel="stylesheet" href="css/custom.css" /> 
+	<link rel="stylesheet" href="css/cmaterial-design-iconic-font.css" /> 
 	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link href="css/quiz_style.css" rel="stylesheet" />
+    <script type="text/javascript" src="data/quiz_questions.json"></script>
+    <script type="text/javascript" src="js/quiz_engine.js"></script>	
 </head>
-<body>
+<body onload="quiz_play();">
 
 	<!-- Always shows a header, even in smaller screens. -->
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -54,8 +58,8 @@
 	      <a class="mdl-navigation__link" href="se_proteger.html"><i class="material-icons">warning</i>Se protéger</a>
 	      <a class="mdl-navigation__link" href="diagnostiquer.html"><i class="material-icons">find_in_page</i>Diagnostiquer</a>	      
 	      <a class="mdl-navigation__link" href=""><i class="material-icons">healing</i>Se soigner</a>
-	      <a class="mdl-navigation__link" href="adresse.html"><i class="material-icons">search</i>Rechecher </a>	    	      	      
-	      <a class="mdl-navigation__link" href="question_reponses.html"><i class="material-icons">forum</i>Questions / Réponses</a>
+	      <a class="mdl-navigation__link" href="adresse.html"><i class="material-icons">search</i>Rechecher </a>	    	      
+	      <a class="mdl-navigation__link" href="questions_reponses.html"><i class="material-icons">forum</i>Questions / Réponses</a>
 	      <a class="mdl-navigation__link" href="quiz_play.html"><i class="material-icons">games</i>Le quiz</a>
 	      <a class="mdl-navigation__link" href=""><i class="material-icons">extension</i>Chasse aux parasites</a>	      			     
 	      <a class="mdl-navigation__link" href="comment.html"><i class="material-icons">copyright</i>Comment ?</a>
@@ -76,70 +80,64 @@
 	    <div class="page-content">	
 			
 			<div class="mdl-grid mdl-container">
-				<h4 class="container_title">A propos de EduPalu</h4>
+				<h4 class="container_title">Ajoutez des pharmacies</h4>
 					<div class="text_container">
-						<div class="mdl-container_text">	
-						    <p>EduPalu est une application d'information et d'éducation sur le paludisme au Congo.</p>
-            
-            <p>Développement : <b>Fongwama</b>, la communauté congolaise de développement libre.</p>
-			<div class="mdl-grid container">
-			  <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone mdl-cell--2-col-tablet center">
-				  <a href="#" class="">
-			        <img src="img/logo_fongwama.jpg" alt="logo Fongwama" class="center-block img-responsive" />
-			      </a>
-			  </div>				    
-			</div> 
+					<div class="mdl-container_text">	
+					
+					<form id="form_pharmacie" class="ajax-pharma-json" action="api/AddPharma.php" method="post">
 
-			<p>
-            Prince Youlou, Delphin Bondongo, Aristide Ndielé, Trésor Ngassaki, Borel Badila, Steve Ndende, Pierre Poulain, Ricken Bazolo.
-            </p>          
+                    <div class="form-group">
+                        <label for="input_name">
+                            <span class="text-uppercase">Nom pharmacie</span>
+                        </label><br/>
+                        <input id="input_name" name="nom" class="form-control search" type="text" value=""/>
+                    </div><br/>
 
+                    <div class="form-group">
+                        <label for="input_address">
+                            <span class="text-uppercase">Adresse pharmacie</span>
+                        </label><br/>
+                        <input id="input_address" name="adresse" class="form-control search" type="text" value=""/>
+                    </div><br/>
 
-			<h5>Crédits images</h5>
+                    <div class="form-group">
+                        <label for="input_ville">
+                            <span class="text-uppercase">Ville</span>
+                        </label><br/>
+                        <input id="input_ville" name="ville" class="form-control search" type="text" value=""/>
+                    </div><br/>
 
-			<div class="mdl-grid container">
-			  <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--2-col-phone mdl-cell--2-col-tablet center">
-				  <a href="http://flyecair.com/" class="">
-			        <img src="img/logo_fondation_ecair.jpg" alt="logo Fondation ECAir" class="center-block img-responsive" />
-			      </a>
-			  </div>
-			  <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--2-col-phone mdl-cell--2-col-tablet center">
-      			  <a href="http://skepsos.fr/" class="">
-			        <img src="img/logo_skepsos.jpg" alt="logo Skepsos" class="center-block img-responsive" />
-			      </a>		  	
-			  </div>
-			  <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--2-col-phone mdl-cell--2-col-tablet center">
-      			  <a href="http://azur-congo.com/" class="">
-			        <img src="img/logo_azur.jpg" alt="logo Azur" class="center-block img-responsive" />
-			      </a>		  	
-			  </div>
-			  <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--2-col-phone mdl-cell--2-col-tablet center">
-      			  <a href="http://fcrm-congo.com/" class="">
-			        <img src="img/logo_fcrm.jpg" alt="logo Azur" class="center-block img-responsive" />
-			      </a>	  	
-			  </div>	
-			  <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--2-col-phone mdl-cell--2-col-tablet center">
-      			  <a href="#" class="">
-			        <img src="img/logo_pnlp.jpg" alt="logo PNLP" class="center-block img-responsive" />
-			      </a>
-			  </div>
-			  <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--2-col-phone mdl-cell--2-col-tablet center">
-      			  <a href="http://congotelecom.cg/" class="">
-			        <img src="img/logo_congo_telecom.jpg" alt="logo PNLP" class="center-block img-responsive" />
-			      </a>	  	
-			  </div>				    
-			</div>
+                    <div class="form-group">
+                        <label for="input_contact">
+                            <span class="text-uppercase">Contact pharmacie</span>
+                        </label><br/>
+                        <input id="input_contact" name="contact" class="form-control search" type="text" value=""/>
+                    </div><br/>
+
+                    <div class="form-group">
+                        <label for="input_quartier">
+                            <span class="text-uppercase">Quartier ou Arrondissement</span>
+                        </label><br/>
+                        <input id="input_quartier" name="quartier" class="form-control search" type="text" value=""/>
+                    </div><br/>
+
+                    <div class="form-group">
+                        <label for="input_numero">
+                            <span class="text-uppercase">Numéro ou mail de l'envoyeur</span>
+                        </label><br/>
+                        <input id="input_numero" name="numero" class="form-control search" type="text" value=""/>
+                    </div><br/>
 
 
-            <p>Toutes les images utilisées dans cette application sont des images sous licence Creative Commons ou du domaine public.</p>
-
-			
+                    <input class="btnAjouter mdl-button mdl-js-button mdl-button--raised mdl-button--colored full_width" type="submit" value="Ajouter">
+                </form>
 
 						</div>
 					</div>
 			</div>
 
 	    </div>
+    
 	    <div class="page-content mdl-container">	
 			<div class="mdl-grid container">	
 	  			<footer class="mdl-mini-footer mdl-layout--large-screen-only">
@@ -150,11 +148,11 @@
 				  </div>
 				</footer>	
 			</div>
-	    </div>      
+	    </div>  
+    
 	  </main>
-
 	</div>
 		
-
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 </body>
 </html>
