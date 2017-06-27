@@ -72,10 +72,14 @@ $(document).ready(function(){
         for (var i=0; i < results.length; i++) {
            // row ${i}
            content += "<div class='place'>";
-           content += "<h6>"+results[i].name +"</h6>";
+           content += "<h4>"+results[i].name +"</h2>";
+           content += "<div class='address'>"+ results[i].address1 + "</div>";
+           content += "<div class='address'>"+ results[i].address2 + "</div>";
+           content += "<div class='city'>"+ results[i].city +"</div>";
+           content += "<a class='tel' href='tel:"+ results[i].tel1 +"'>"+ results[i].tel1 +"</a>";
+           content +=  "&nbsp; <a class='tel' href='tel:"+ results[i].tel2 +"'>"+ results[i].tel2 +"</a>";
            content += "</div>";
-        };
-
+        }
         
         $("#search_bar_results").html(content);
 
@@ -112,7 +116,7 @@ $(document).ready(function(){
         	if(query_field.length>0) {
         		searchPharmaMain(query_field);
         	} else {
-        		$("#search_bar_results").html("");
+        		$("#search_bar_results").html(""); 
         	}
          
     });
@@ -233,7 +237,13 @@ $(document).ready(function(){
         };
         
         $("#results").html(content);
-
     }
 
+	function processSearchForm()
+	{
+	    var searchParams = location.search.substring(1).split("&");
+	    var searchTmpParam = parameters[0].split("=");
+	    var searchText = unescape(temp[1]);
+	    //alert(l); //Dialog with the text you put on the textbox
+	}
 });
