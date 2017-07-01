@@ -91,7 +91,7 @@ section{
 }
 
 #next{
-    width: 49%;
+    width: 35%;
     height: 35px;
     float: right;
 }
@@ -99,7 +99,7 @@ section{
 #quitter{
     position: relative;
     margin-top: 10px;
-    width: 99.8%;
+    width: 100%;
 }
 
 

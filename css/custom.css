@@ -296,3 +296,21 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.para1{
+  background: url('../img/para_1.jpg') center / cover;  
+}
+.para2{
+  background: url('../img/para_2.jpg') center / cover;  
+}
+.para3{
+  background: url('../img/para_3.jpg') center / cover;  
+}
+.para4{
+  background: url('../img/para_4.jpg') center / cover;  
+}
+.para5{
+  background: url('../img/para_5.jpg') center / cover;  
+}
+.para6{
+  background: url('../img/para_6.jpg') center / cover;  
+}
