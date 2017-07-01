@@ -72,17 +72,42 @@
 				    <i class="material-icons blue_color">search</i>
 				    <input type="text" id="input_search" name="input_search" placeholder="Rechercher une pharmacie, un CSI, un hôpital...">
 				</div>
+
+
+
+				<table>
+            <tr><td style="background-color: #fff;  border-radius: 3px;"> 
+         <label class="mdl-radio mdl-js-radio" for="option1">
+            <input type="radio" id="option1" name="gender" value="true" class="mdl-radio__button" checked>
+            <span class="mdl-radio__label">Pharmacie</span>
+         </label>
+	  </td>
+      <td style="background-color: #fff; border-radius: 3px;">
+         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option2">
+            <input type="radio" id="option2" name="gender" value="false"  class="mdl-radio__button" >
+            <span class="mdl-radio__label">Hopital</span>
+         </label>
+	  </td> 
+      </tr>
+   </table>   
+
+
 			  </div>
 			</div>	
 	    </div>		  
 	  <main class="mdl-layout__content">
 
-	    <div class="page-content mdl-container">
+	    <div class="page-content mdl-container search_bar_results_parent">
 
-			<div id="search_bar_results" class="container search_bar_results">
+	    	<!-- START search results-->				 
+			<div id="search_bar_results" class="search_bar_results ">
 
 			</div>	
+			<!-- END search results-->
+
 			<div class="mdl-grid container">
+
+			
 			  <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone mdl-cell--2-col-tablet">
 			  		<div class="demo-card-image mdl-card mdl-shadow--2dp comprendre">
 					  <div class="mdl-card__title mdl-card--expand"></div>
