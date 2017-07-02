@@ -1,0 +1,72 @@
+places_hospital = [
+    {
+        "address1": "avenue Félix Eboué",
+        "address2": "",
+        "city": "Pointe Noire",
+        "verified": "",
+        "id": 2029968,
+        "lat": -4.790462,
+        "lon": 11.830518,
+        "name": "Pharmacie Barrière",
+        "source": "Congo Telecom",
+        "tel1": "22 294 39 10",
+        "tel2": "",
+        "version": 1
+    },
+    {
+        "address1": "",
+        "address2": "",
+        "city": "Pointe Noire",
+        "verified": "",
+        "id": 2029970,
+        "lat": -4.77867,
+        "lon": 11.863640,
+        "name": "Pharmacie C.D.B",
+        "source": "Congo Telecom",
+        "tel1": "22 294 16 43",
+        "tel2": "",
+        "version": 2
+    },
+    {
+        "address1": "Avenue Raymond Paillet",
+        "address2": "",
+        "city": "Pointe Noire",
+        "verified": "",
+        "id": 2029971,
+        "lat": -4.777156,
+        "lon": 11.864740,
+        "name": "Pharmacie Case du Parti",
+        "source": "Congo Telecom",
+        "tel1": "22 294 18 43",
+        "tel2": "",
+        "version": 1
+    },
+    {
+        "address1": "347 avenue du Général de Gaulle",
+        "address2": "centre ville, en face de Burotec",
+        "city": "Pointe Noire",
+        "verified": "20160708",
+        "id": 2029972,
+        "lat": -4.795085,
+        "lon": 11.854775,
+        "name": "Pharmacie Croix du Sud",
+        "source": "Congo Telecom / FCRM",
+        "tel1": "05 541 74 29",
+        "tel2": "",
+        "version": 2
+    },
+    {
+        "address1": "296 avenue Kaat Matou",
+        "address2": "",
+        "city": "Pointe Noire",
+        "verified": "",
+        "id": 2029973,
+        "lat": -4.7907348,
+        "lon": 11.8619267,
+        "name": "Pharmacie Fal'h",
+        "source": "Congo Telecom",
+        "tel1": "22 294 51 14",
+        "tel2": "",
+        "version": 1
+    }
+    ]
