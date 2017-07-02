@@ -19,9 +19,16 @@ $(document).ready(function(){
         places[i].address_full = places[i].name + places[i].address1 + places[i].address2 + places[i].city;
         places[i].address_full = places[i].address_full.toLowerCase().latinise();
     };
+
+    for (var i=0; i < places_hospital.length; i++) 
+    {
+        places_hospital[i].address_full = places_hospital[i].name + places_hospital[i].address1 + places_hospital[i].address2 + places_hospital[i].city;
+        places_hospital[i].address_full = places_hospital[i].address_full.toLowerCase().latinise();
+    };
     
     // loading of pharmacy json database
-    var db = JsonQuery(places);
+    var db = JsonQuery(places); 
+    var db_hospital = JsonQuery(places_hospital); 
     var db_geo;
     
 
@@ -87,6 +94,38 @@ $(document).ready(function(){
 
     }
 
+
+
+        //search the pharmacy from main search-bar 
+    function searchHospitalMain(query_data){
+
+        // build query, condition, name like (name.$li)
+        re = new RegExp(query_data, "i");
+        var query = "db_hospital.where({'name.$li': " + re + "}).or({'address_full.$li': " + re + "}).exec()";
+
+        // build results content (construction du résultat de la recherche)
+        var content = "";
+
+        // evaluation of builded query
+        results = eval(query);
+
+        // Construction des item de la recherche (résultat)
+        for (var i=0; i < results.length; i++) {
+           // row ${i}
+           content += "<div class='place'>";
+           content += "<h4>"+results[i].name +"</h2>";
+           content += "<div class='address'>"+ results[i].address1 + "</div>";
+           content += "<div class='address'>"+ results[i].address2 + "</div>";
+           content += "<div class='city'>"+ results[i].city +"</div>";
+           content += "<a class='tel' href='tel:"+ results[i].tel1 +"'>"+ results[i].tel1 +"</a>";
+           content +=  "&nbsp; <a class='tel' href='tel:"+ results[i].tel2 +"'>"+ results[i].tel2 +"</a>";
+           content += "</div>";
+        }
+        
+        $("#search_bar_results").html(content);
+
+    }
+
     // When search by pharmacy name
     $("#btn_search").click(function() {
 
@@ -110,13 +149,20 @@ $(document).ready(function(){
 
     // Search at every key press in the App main SearchBar
     $("#input_search").keyup( function() {
-
     		 // clean input field
         var query_field = $("#input_search").val().trim().toLowerCase().latinise(); 
         
         	//Start searching from the second key press
         	if(query_field.length>0) {
-        		searchPharmaMain(query_field);
+            //if pharmacy is selected (checked)
+            if($("input[type=radio]")[0].checked) {
+
+              console.log("******pharmacy******");
+              searchPharmaMain(query_field);
+            } else {          
+              console.log("******hospital******");
+              searchHospitalMain(query_field);    
+            }
         	} else {
         		$("#search_bar_results").html(""); 
         	}
@@ -241,10 +287,11 @@ $(document).ready(function(){
         $("#results").html(content);
     }
  
-    $('input[type=radio]').click(function(){
+    // toggle current search directory (pharmacy & hospital) in response to RadioButtons
+    /*$('input[type=radio]').click(function(){
         searchOption = this.value;
-        alert(searchOption);
-    }); 
+        $("#input_search").keyup();
+    });*/
 
 	function processSearchForm()
 	{
