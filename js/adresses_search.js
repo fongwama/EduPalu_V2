@@ -81,7 +81,7 @@ $(document).ready(function(){
         for (var i=0; i < results.length; i++) {
            // row ${i}
            content += "<div class='place'>";
-           content += "<h4>"+results[i].name +"</h2>";
+           content += "<h2>"+results[i].name +"</h2>";
            content += "<div class='address'>"+ results[i].address1 + "</div>";
            content += "<div class='address'>"+ results[i].address2 + "</div>";
            content += "<div class='city'>"+ results[i].city +"</div>";

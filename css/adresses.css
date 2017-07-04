@@ -24,10 +24,15 @@ text-decoration : none;
 
 #results ul a { display: block; position: relative; width: 100%; }
 
+.place{
+  margin-bottom: 20px;
+  padding: 10px 0 0 0;
+}
 .place h2 { 
     font-size: 1.5em; 
     color: #55678d; 
-    margin: 20px 0px 10px;
+    line-height: 1;
+    margin: 0;
   }
     
 .place .city {
