@@ -22,6 +22,11 @@ text-decoration : none;
   right: 10px; 
 }
 
+.search_radio{
+  background-color: #fff; 
+  border-radius: 3px;
+}
+
 .place_image{ 
 
 }
