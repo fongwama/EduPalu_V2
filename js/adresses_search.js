@@ -11,7 +11,7 @@ String.prototype.latinise=function(){return this.replace(/[^A-Za-z0-9\[\] ]/g,fu
 var optionPharmacy = true, optionHospital = false;
 var searchOption = optionPharmacy;
 
-$(document).ready(function(){
+$(document).ready(function(){(false)
 
     // create field with all address data
     for (var i=0; i < places.length; i++) 
@@ -178,8 +178,11 @@ $(document).ready(function(){
               console.log("******hospital******");
               searchHospitalMain(query_field);    
             }
+
+            showSearchOptions(true);
         	} else {
         		$("#search_bar_results").html(""); 
+            showSearchOptions(false);
         	}
          
     });
@@ -306,6 +309,17 @@ $(document).ready(function(){
     $('input[type=radio]').click(function(){
         $("#input_search").keyup();
     });
+
+  function showSearchOptions(showOptions){
+    if(showOptions) {
+      $('#search_options_container').show();
+    } else {
+      $('#search_options_container').hide();
+    }
+  }
+
+  //Hide the search_bar options (init value)
+  showSearchOptions(false);
 
 	function processSearchForm()
 	{
