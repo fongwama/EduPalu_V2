@@ -80,13 +80,28 @@ $(document).ready(function(){
         // Construction des item de la recherche (résultat)
         for (var i=0; i < results.length; i++) {
            // row ${i}
-           content += "<div class='place'>";
-           content += "<h2>"+results[i].name +"</h2>";
-           content += "<div class='address'>"+ results[i].address1 + "</div>";
-           content += "<div class='address'>"+ results[i].address2 + "</div>";
-           content += "<div class='city'>"+ results[i].city +"</div>";
-           content += "<a class='tel' href='tel:"+ results[i].tel1 +"'>"+ results[i].tel1 +"</a>";
-           content +=  "&nbsp; <a class='tel' href='tel:"+ results[i].tel2 +"'>"+ results[i].tel2 +"</a>";
+
+           content += "<div class='place_parent'>";
+               content += "<div class='place'>";
+               content += "<h2>"+results[i].name +"</h2>";
+               content += "<div class='address'>"+ results[i].address1 + "</div>";
+               content += "<div class='address'>"+ results[i].address2 + "</div>";
+               content += "<div class='city'>"+ results[i].city +"</div>";
+               content += "<a class='tel' href='tel:"+ results[i].tel1 +"'>"+ results[i].tel1 +"</a>";
+               content +=  "&nbsp; <a class='tel' href='tel:"+ results[i].tel2 +"'>"+ results[i].tel2 +"</a>";
+               content += "</div>"; 
+               content += "</div>";
+
+               content += "<div class='place_image_container'>";
+                  pharmacyName = results[i].name.toLowerCase();
+                  if( pharmacyName.indexOf("nuit") == -1 ){
+                    //pharmacy de jour
+                    content += "<img class='place_image' src='img/ic_reussites.png'/>";
+                  } else {
+                    //pharmacie de nuit
+                    content += "<img class='place_image' src='img/ic_echecs.png'/>";
+                  }
+               content += "</div>";
            content += "</div>";
         }
         
