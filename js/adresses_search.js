@@ -302,11 +302,10 @@ $(document).ready(function(){
         $("#results").html(content);
     }
  
-    // toggle current search directory (pharmacy & hospital) in response to RadioButtons
-    /*$('input[type=radio]').click(function(){
-        searchOption = this.value;
+    //toggle current search directory (pharmacy & hospital) in response to RadioButtons
+    $('input[type=radio]').click(function(){
         $("#input_search").keyup();
-    });*/
+    });
 
 	function processSearchForm()
 	{
