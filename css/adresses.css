@@ -12,9 +12,19 @@ a { text-decoration: none; }
 
 a:hover{
 text-decoration : none;
+} 
+
+.place_parent{
+  position: relative;
+}
+.place_image_container{
+  position: absolute; 
+  right: 10px; 
 }
 
+.place_image{ 
 
+}
 
 #results place {
     margin: 10px;
