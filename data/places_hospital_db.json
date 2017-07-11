@@ -1,4 +1,4 @@
-places = [
+places_hospital = [
     {
         "address1": "avenue Félix Eboué",
         "address2": "",
