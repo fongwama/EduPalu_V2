@@ -96,10 +96,10 @@ $(document).ready(function(){
                   pharmacyName = results[i].name.toLowerCase();
                   if( pharmacyName.indexOf("nuit") == -1 ){
                     //pharmacy de jour
-                    content += "<img class='place_image' src='img/ic_reussites.png'/>";
+                    content += "<i class='fa fa-sun-o fa-2x' aria-hidden='true'></i>";
                   } else {
                     //pharmacie de nuit
-                    content += "<img class='place_image' src='img/ic_echecs.png'/>";
+                    content += "<i class='fa fa-moon-o fa-2x' aria-hidden='true'></i>";
                   }
                content += "</div>";
            content += "</div>";
