@@ -20,15 +20,15 @@ $(document).ready(function(){(false)
         places[i].address_full = places[i].address_full.toLowerCase().latinise();
     };
 
-    for (var i=0; i < places_hospital.length; i++) 
+    for (var i=0; i < places_hospital_labo.length; i++) 
     {
-        places_hospital[i].address_full = places_hospital[i].name + places_hospital[i].address1 + places_hospital[i].address2 + places_hospital[i].city;
-        places_hospital[i].address_full = places_hospital[i].address_full.toLowerCase().latinise();
+        places_hospital_labo[i].address_full = places_hospital_labo[i].name + places_hospital_labo[i].address1 + places_hospital_labo[i].address2 + places_hospital_labo[i].city;
+        places_hospital_labo[i].address_full = places_hospital_labo[i].address_full.toLowerCase().latinise();
     };
     
     // loading of pharmacy json database
-    var db = JsonQuery(places); 
-    var db_hospital = JsonQuery(places_hospital); 
+    var db_pharma = JsonQuery(places); 
+    var db_hospital_labo = JsonQuery(places_hospital_labo); 
     var db_geo;
     
 
@@ -37,7 +37,7 @@ $(document).ready(function(){(false)
 
     		// build query, condition, name like (name.$li)
         re = new RegExp(query_field, "i");
-        var query = "db.where({'name.$li': " + re + "}).or({'address_full.$li': " + re + "}).exec()";
+        var query = "db_pharma.where({'name.$li': " + re + "}).or({'address_full.$li': " + re + "}).exec()";
 
         // build results content (construction du résultat de la recherche)
         var content = "";
@@ -69,7 +69,7 @@ $(document).ready(function(){(false)
 
     		// build query, condition, name like (name.$li)
         re = new RegExp(query_field, "i");
-        var query = "db.where({'name.$li': " + re + "}).or({'address_full.$li': " + re + "}).exec()";
+        var query = "db_pharma.where({'name.$li': " + re + "}).or({'address_full.$li': " + re + "}).exec()";
 
         // build results content (construction du résultat de la recherche)
         var content = "";
@@ -116,7 +116,7 @@ $(document).ready(function(){(false)
 
         // build query, condition, name like (name.$li)
         re = new RegExp(query_data, "i");
-        var query = "db_hospital.where({'name.$li': " + re + "}).or({'address_full.$li': " + re + "}).exec()";
+        var query = "db_hospital_labo.where({'name.$li': " + re + "}).or({'address_full.$li': " + re + "}).exec()";
 
         // build results content (construction du résultat de la recherche)
         var content = "";
@@ -143,34 +143,7 @@ $(document).ready(function(){(false)
         
         $("#search_bar_results").html(content);
 
-    }
-
-    function searchLaboratoryMain(query_data){
-              // build query, condition, name like (name.$li)
-        re = new RegExp(query_data, "i");
-        var query = "db_hospital.where({'name.$li': " + re + "}).or({'address_full.$li': " + re + "}).where({'name:laboratoire'}).exec()";
-
-        // build results content (construction du résultat de la recherche)
-        var content = "";
-
-        // evaluation of builded query
-        results = eval(query);
-
-        // Construction des item de la recherche (résultat)
-        for (var i=0; i < results.length; i++) {
-           // row ${i}
-           content += "<div class='place'>";
-           content += "<h4>"+results[i].name +"</h2>";
-           content += "<div class='address'>"+ results[i].address1 + "</div>";
-           content += "<div class='address'>"+ results[i].address2 + "</div>";
-           content += "<div class='city'>"+ results[i].city +"</div>";
-           content += "<a class='tel' href='tel:"+ results[i].tel1 +"'>"+ results[i].tel1 +"</a>";
-           content +=  "&nbsp; <a class='tel' href='tel:"+ results[i].tel2 +"'>"+ results[i].tel2 +"</a>";
-           content += "</div>";
-        }
-        
-        $("#search_bar_results").html(content);
-    }
+    } 
 
     // When search by pharmacy name
     $("#btn_search").click(function() {
@@ -208,10 +181,7 @@ $(document).ready(function(){(false)
             } else if($("input[type=radio]")[1].checked){          
               console.log("******hospital******");
               searchHospitalMain(query_field);    
-            } else {
-              console.log("******Laboratoire******");
-              searchLaboratoryMain(query_field);    
-            }
+            } 
 
             showSearchOptions(true);
         	} else {

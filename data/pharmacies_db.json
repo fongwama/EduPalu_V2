@@ -1,4 +1,4 @@
-places = [
+places_hospital_labo = [
     {
         "address1": "66 avenue Barthélémy Boganda",
         "address2": "",
