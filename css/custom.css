@@ -313,3 +313,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+  .mdl-cell {
+    margin:8px 8px 0px 8px;
+  }
+  .table_center{
+    margin: 0 auto;
+  }
