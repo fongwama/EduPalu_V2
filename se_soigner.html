@@ -7,7 +7,7 @@
 	<title>Se soigner .:. EduPalu</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-light_blue.min.css" /> 
+	<link rel="stylesheet" href="css/material.blue-light_blue.min.css" /> 
 	<link rel="stylesheet" href="css/custom.css" /> 
 	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
@@ -61,7 +61,41 @@
 	      <a class="mdl-navigation__link" href="comment.html"><i class="material-icons">copyright</i>Comment ?</a>
 	      <a class="mdl-navigation__link" href="qui.html"><i class="material-icons">info</i> A propos</a>
 	    </nav>
-	  </div> 
+	  </div>  
+	    <div class="page-content">	
+			<div class="mdl-grid bg_search">
+			  <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+				<div class="search">
+				    <i class="material-icons blue_color">search</i>
+				    <input type="text" id="input_search" name="input_search" placeholder="Rechercher une pharmacie, un CSI, un hôpital...">
+				</div>
+
+					<table class="table_center">
+				            <tr><td class="search_radio"> 
+				         <label class="mdl-radio mdl-js-radio" for="option_pharma">
+				            <input type="radio" id="option_pharma" name="search_option" class="mdl-radio__button" checked>
+				            <span class="mdl-radio__label">Pharmacie</span>
+				         </label>
+					  </td>
+				      <td class="search_radio">
+				         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect " for="option_hospital">
+				            <input type="radio" id="option_hospital" name="search_option" class="mdl-radio__button" >
+				            <span class="mdl-radio__label">Hopital</span>
+				         </label>
+					  </td> 
+				      <td class="search_radio" style="">
+				         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect search_radio" for="option_labo">
+				            <input type="radio" id="option_labo" name="search_option" class="mdl-radio__button" >
+				            <span class="mdl-radio__label">Laboratoire</span>
+				         </label>
+					  </td> 
+				      </tr>
+				   </table>   
+
+
+			  </div>
+			</div>	
+	    </div>	 
 	  <div>	
 	    <div class="page-content">	
 			<div class="mdl-grid bg_search">
