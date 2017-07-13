@@ -17,11 +17,18 @@ text-decoration : none;
 .place_parent{
   position: relative;
 }
-.place_image_container{
-  position: absolute; 
-  right: 10px; 
+.fa {
+  color: rgb(85,103,141);
+  float: right;
+  padding-right: 15px;
 }
-
+.place_image_container {
+  /* position: absolute; */
+  right: 10px;
+  float: right;
+  width: 15%;
+  padding-top: 10px;
+}
 .search_radio{
   background-color: #fff; 
   border-radius: 3px;
@@ -39,9 +46,11 @@ text-decoration : none;
 
 #results ul a { display: block; position: relative; width: 100%; }
 
-.place{
+.place {
   margin-bottom: 20px;
   padding: 10px 0 0 0;
+  width: 80%;
+  float: left;
 }
 .place h2 { 
     font-size: 1.5em; 
