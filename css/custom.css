@@ -84,7 +84,7 @@
 }
 
 .mdl-grid {
-  padding: 0px !important;
+  padding: 0px 0px 8px 0px;
 }
 
 .demo-card-square.mdl-card {
@@ -200,10 +200,11 @@
 .bg_search{
   background-color: rgb(33,150,243);
 }
-.search{
+.search {
   border: 1px solid #DDD;
   background-color: white;
   padding: 5px;
+  margin-bottom: 5px;
 }
 
 .search > i{
