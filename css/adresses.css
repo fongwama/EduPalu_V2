@@ -17,11 +17,13 @@ text-decoration : none;
 .place_parent{
   position: relative;
 }
-.place_image_container{
-  position: absolute; 
-  right: 10px; 
+.place_image_container {
+  /* position: absolute; */
+  right: 10px;
+  float: right;
+  width: 15%;
+  padding-top: 10px;
 }
-
 .search_radio{
   background-color: #fff; 
   border-radius: 3px;
