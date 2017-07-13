@@ -17,6 +17,10 @@ text-decoration : none;
 .place_parent{
   position: relative;
 }
+.fa{
+  color: rgb(85,103,141);
+}
+
 .place_image_container {
   /* position: absolute; */
   right: 10px;
