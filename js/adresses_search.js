@@ -322,6 +322,22 @@ $(document).ready(function(){(false)
       $('#search_options_container').hide();
     }
   }
+  
+  function showSearchContent(showOptions){
+    if(showOptions) {
+      $('#search_bar_results').show();
+    } else {
+      $('#search_bar_results').hide();
+    }
+  }
+  
+  function showMainContent(showOptions){
+    if(showOptions) {
+      $('#content_main').show();
+    } else {
+      $('#content_main').hide();
+    }
+  }
 
   //Hide the search_bar options (init value)
   showSearchOptions(false);
