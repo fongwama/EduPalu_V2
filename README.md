@@ -32,32 +32,24 @@ EduPalu est disponible sur la bibliothèque d'applications Android Google Play S
 
 Informations détaillées sur le paludisme. 
 
-### Pharmacies
+### Retrouver un laboratoire, pharmacie ou un centre de santé
+EduPalu permet de trouver le laboratoire, la pharmacie ou le centre de santé le plus proche de votre position en utilisant la fonction de géolocalisation de votre téléphone ou ordinateur.
 
-Liste des principales pharmacies. Vous pouvez chercher une pharmacie par mot-clef ou trouver la pharmacie la plus proche en utilisant la fonction de géolocalisation de votre téléphone (depuis un smartphone) ou de votre navigateur (depuis un ordinateur).
+Une barre recherche par mot clef (ville, quartier,nom, ...) vous permet de naviguer dans une base de données contenant plus de 150 laboratoires, pharmacies et centres de santé
 
-Pour chaque pharmacie, l'adresse et des indications pour trouver facilement la pharmacie sont fournies. Un numéro de téléphone est indiqué dans la mesure du possible.
- 
 Cette base de données est en constante évolution. Les informations fournies dans cette rubrique ne le sont qu'à titre indicatif.
 
 ### Question / réponses
 
 Les principales questions que vous pouvez vous poser sur la paludisme avec leurs réponses.
 
-### Quiz
-
+###Quiz
 Vérifiez vos connaissances sur le paludisme avec ce jeu de questions à choix multiples. Pour chaque question, plusieurs réponses vous sont proposées. Vous avez un temps limité pour répondre. Plus vous répondrez vite (et correctement), plus vous marquerez de points.
 
-### Chasse aux parasites
-
+###Chasse aux parasites
 Mettez-vous dans la peau d'un technicien d'un laboratoire et essayez de trouver les parasites qui se cachent dans les globules rouges. Plus vous serez rapide, plus vous marquerez de points. Attention, si vous vous trompez, vous perdrez des points.
 
 Les images présentées dans ce jeu sont de véritables images de frottis sanguins, prises en photo par un microscope.
-
-### Comment ? et qui ?
-
-Ces rubriques détaillent comment l'application a été construite, les technologies utilisées, sa licence d'utilisation ainsi que les développeurs et les partenaires qui ont contribué à sa réalisation.
-
 
 ## Licence
 Cette application est un logiciel libre diffusé sous la licence [GNU General Public License](LICENSE) (GPL).
