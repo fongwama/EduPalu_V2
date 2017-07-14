@@ -43,10 +43,10 @@ Cette base de données est en constante évolution. Les informations fournies da
 
 Les principales questions que vous pouvez vous poser sur la paludisme avec leurs réponses.
 
-###Quiz
+### Quiz
 Vérifiez vos connaissances sur le paludisme avec ce jeu de questions à choix multiples. Pour chaque question, plusieurs réponses vous sont proposées. Vous avez un temps limité pour répondre. Plus vous répondrez vite (et correctement), plus vous marquerez de points.
 
-###Chasse aux parasites
+### Chasse aux parasites
 Mettez-vous dans la peau d'un technicien d'un laboratoire et essayez de trouver les parasites qui se cachent dans les globules rouges. Plus vous serez rapide, plus vous marquerez de points. Attention, si vous vous trompez, vous perdrez des points.
 
 Les images présentées dans ce jeu sont de véritables images de frottis sanguins, prises en photo par un microscope.
