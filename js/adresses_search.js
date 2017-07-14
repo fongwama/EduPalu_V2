@@ -106,7 +106,7 @@ $(document).ready(function(){(false)
            content += "</div>";
         }
         
-        $("#search_bar_results").html(content);
+			$("#search_bar_results").html(content);
 
     }
 
@@ -142,7 +142,7 @@ $(document).ready(function(){(false)
            content += "</div>";
         }
         
-        $("#search_bar_results").html(content);
+			$("#search_bar_results").html(content);
 
     } 
 
@@ -185,9 +185,13 @@ $(document).ready(function(){(false)
             } 
 
             showSearchOptions(true);
+			showSearchContent(true);
+			showMainContent(false);
         	} else {
         		$("#search_bar_results").html(""); 
-            showSearchOptions(false);
+				showSearchOptions(false);
+				showSearchContent(false);
+				showMainContent(true);
         	}
          
     });
@@ -326,16 +330,20 @@ $(document).ready(function(){(false)
   function showSearchContent(showOptions){
     if(showOptions) {
       $('#search_bar_results').show();
+	  console.log("******show results******");
     } else {
       $('#search_bar_results').hide();
+	  console.log("******hide results******");
     }
   }
   
   function showMainContent(showOptions){
     if(showOptions) {
-      $('#content_main').show();
+      $('#_main').show();
+	  console.log("******show main******");
     } else {
-      $('#content_main').hide();
+      $('#_main').hide();
+	  console.log("******hide main******");
     }
   }
 
