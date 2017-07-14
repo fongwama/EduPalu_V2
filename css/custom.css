@@ -342,3 +342,9 @@ a:hover {
     margin: 0 auto;
     padding: 5px;
   }
+.mdl-menu {
+  background-color: rgb(33,150,243);
+}  
+.mdl-menu__item:hover {
+  background-color: rgb(129, 199, 255) !important;
+}
