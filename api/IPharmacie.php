@@ -7,4 +7,5 @@ interface IPharmacie
     public function addPharmacie(Pharmacie $pharmacie);
     public function deletePharmacie(Pharmacie $pharmacie);
     public function updatePharmacie(Pharmacie $pharmacie);
+    public function existPharma(Pharmacie $pharmacie);
 }

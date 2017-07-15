@@ -1,3 +1,36 @@
+.response_form_success{
+  background: rgba(55, 244, 55, 0.65);
+  color: rgba(0, 128, 0, 1);
+  margin:10px 16px 10px 16px;
+  padding: 10px 8px 10px 8px;
+  border-radius: 2px;
+  max-width: 100%;
+  width: auto;
+  border: 2px solid rgba(0, 128, 0, 0.85);
+}
+
+.response_form_failed{
+  background: red;
+  color: darkred;
+  margin:10px 16px 10px 16px;
+  padding: 10px 8px 10px 8px;
+  border-radius: 2px;
+  border: 2px solid darkred;
+  max-width: 100%;
+  width: auto;
+}
+
+.response_form_warnig{
+  background: orangered;
+  color: orange;
+  margin:10px 16px 10px 16px;
+  padding: 10px 8px 10px 8px;
+  border-radius: 2px;
+  border: 2px solid orange;
+  max-width: 100%;
+  width: auto;
+}
+
 .mdl-mini-footer {
   color: rgb(158,158,158);
   background-color: rgb(33,150,243) !important; 

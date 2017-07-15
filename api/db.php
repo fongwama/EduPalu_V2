@@ -1,8 +1,8 @@
 <?php
 
 //Définition des constantes de connexion à la base de donnée
-define('USERNAME', 'all');
-define('PASSWD', 'test');
+define('USERNAME', 'root');
+define('PASSWD', '');
 define('DSN', 'mysql:host=localhost;dbname=edupalu_db');
 
 //Connexion à la base de données
