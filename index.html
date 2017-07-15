@@ -84,7 +84,7 @@
 				    <i class="material-icons blue_color">search</i>
 				    <input type="text" id="input_search" name="input_search" placeholder="Rechercher une pharmacie, un CSI, un hôpital...">
 				</div>
-		<table id="search_options_container" class="table_center">
+		<table id="search_options_container" class="table_center" style="display: none">
 	        <tr><td class="search_radio"> 
 			         <label class="mdl-radio mdl-js-radio" for="option_pharma">
 			            <input type="radio" id="option_pharma" name="search_option" class="mdl-radio__button" checked>
@@ -105,17 +105,16 @@
 	    </div>		  
 	  <main class="mdl-layout__content">
 
-	    <div class="page-content mdl-container search_bar_results_parent">
+	    <div class="page-content mdl-container"> 
 
-	    	<!-- START search results-->				 
-			<div id="search_bar_results" class="search_bar_results ">
+	    <!-- START search results-->				 
+			<div id="search_bar_results" class="mdl-layout--large-screen-only mdl-container search_bar_results" style="display: none">
 
 			</div>	
 			<!-- END search results-->
 
-			<div class="mdl-grid container">
+			<div id="_main" class="mdl-grid container">
 
-			
 			  <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-phone mdl-cell--2-col-tablet">
 			  		<div class="demo-card-image mdl-card mdl-shadow--2dp comprendre">
 					  <div class="mdl-card__title mdl-card--expand"></div>
@@ -203,9 +202,10 @@
 					    <span class="demo-card-image__filename"><a href="qui.html">Qui ?</a></span>
 					  </div>
 					</div>		  	
-			  </div>				    
+			  </div>		
 			</div>
-	    </div>
+	    
+		</div>
 
 	    <div class="page-content mdl-container">	
 			<div class="mdl-grid container">	
@@ -217,7 +217,7 @@
 				  </div>
 				</footer>	
 			</div>
-	    </div>
+	    </div>  
 
 
 

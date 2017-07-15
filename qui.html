@@ -71,7 +71,7 @@
 				    <i class="material-icons blue_color">search</i>
 				    <input type="text" id="input_search" name="input_search" placeholder="Rechercher une pharmacie, un CSI, un hôpital...">
 				</div>
-		<table id="search_options_container" class="table_center">
+		<table id="search_options_container" class="table_center" style="display: none">
 	        <tr><td class="search_radio"> 
 			         <label class="mdl-radio mdl-js-radio" for="option_pharma">
 			            <input type="radio" id="option_pharma" name="search_option" class="mdl-radio__button" checked>
@@ -92,9 +92,13 @@
 	    </div>	 
 		  
 	  <main class="mdl-layout__content">
-	    <div class="page-content">	
-			
-			<div class="mdl-grid mdl-container">
+	    <div class="page-content mdl-container">	
+			<!-- START search results-->				 
+			<div id="search_bar_results" class="mdl-layout--large-screen-only mdl-container search_bar_results" style="display: none">
+
+			</div>	
+			<!-- END search results-->
+			<div id="_main" class="mdl-grid mdl-container">
 				<h4 class="container_title">A propos de EduPalu</h4>
 					<div class="text_container">
 						<div class="mdl-container_text">	
@@ -159,7 +163,7 @@
 			</div>
 
 	    </div>
-	    <div class="page-content mdl-container">	
+	     <div class="page-content mdl-container">	
 			<div class="mdl-grid container">	
 	  			<footer class="mdl-mini-footer mdl-layout--large-screen-only">
 				  <div class="mdl-mini-footer__left-section">
@@ -169,7 +173,7 @@
 				  </div>
 				</footer>	
 			</div>
-	    </div>      
+	    </div>  
 	  </main>
 
 	</div>
