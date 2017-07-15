@@ -137,6 +137,9 @@
 .sourire{
   background: url('../img/menu_sourire.jpg') center / cover no-repeat #46B6AC;
 }
+.diagnostic{
+  background: url('../img/menu_tdr.jpg') center / cover no-repeat #46B6AC;
+}
 .moustique{
   background: url('../img/menu_moustique.jpg') center / cover no-repeat #46B6AC;
 }
