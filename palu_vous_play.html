@@ -78,117 +78,119 @@
 			<div class="mdl-grid mdl-container">
 				<h4 class="container_title">Recueil de données</h4>
 					<div class="text_container">
-						<div class="mdl-container_text">		    
-						  
-                <form id="form_palu_et_vous" action="#" method="post">
+						<div class="mdl-container_text">
+							<div id="response_server"></div>
+							<br>
+						<form id="form_palu_et_vous" action="api/RecueilData.php" method="post">
 
-                    <fieldset class="form-group">
-                        <label><b>Vous êtes : </b></label><br>
-                        <input id="hom" type="radio" name="identite" value="homme"/> un homme
-                        <input id="fem" type="radio" name="identite" value="femme"/> une femme
-                        <span id="etatenceinte" style="display: none"><input type="checkbox" name="etat" value=""/>enceinte</span>
-                    </fieldset>
-                    <br>
+								<fieldset class="form-group">
+									<label><b>Vous êtes : </b></label><br>
+									<input id="hom" type="radio" name="identite" value="homme"/> un homme
+									<input id="fem" type="radio" name="identite" value="femme"/> une femme
+									<span id="etatenceinte" style="display:none "><input type="checkbox" name="etat" />enceinte</span>
+								</fieldset>
+								<br>
 
-                    <fieldset class="form-group">
-                        <label><b>Quel âge avez-vous ? </b></label><br>
-                        <input id="age"  type="number" name="age" min="0" max="90"/><span>&nbsp; ans</span>
-                    </fieldset>
-                    <br>
+								<fieldset class="form-group">
+									<label><b>Quel âge avez-vous ? </b></label><br>
+									<input id="age"  type="number" name="age" min="0" max="90"/><span>&nbsp; ans</span>
+								</fieldset>
+								<br>
 
-                    <fieldset class="form-group">
-                        <label><b>Avez-vous consulté un médecin pour diagnostiquer ce paludisme ?</b></label>
-                        <br>
-                        <label class="radio-inline">
-                            <input type="radio" name="question" id="oui" value="oui" /> oui
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="question" id="non" value="non" /> non
-                        </label>
-                    </fieldset>
-					<br>
+								<fieldset class="form-group">
+									<label><b>Avez-vous consulté un médecin pour diagnostiquer ce paludisme ?</b></label>
+									<br>
+									<label class="radio-inline">
+										<input type="radio" name="question" id="oui" value="oui" /> oui
+									</label>
+									<label class="radio-inline">
+										<input type="radio" name="question" id="non" value="non" /> non
+									</label>
+								</fieldset>
+								<br>
 
-                    <fieldset class="form-group">
-                        <label><b>Avez-vous réalisé un examen en laboratoire pour diagnostiquer ce paludisme ?</b></label>
-                        <br>
-                        <label class="radio-inline">
-                            <input type="radio" name="question" id="labo_oui" value="oui" /> oui
-                        </label>
-                        <label class="radio-inline">
-                            <input type="radio" name="question" id="labo_non" value="non" /> non
-                        </label>
-                    </fieldset>
-                    <br>
+								<fieldset class="form-group">
+									<label><b>Avez-vous réalisé un examen en laboratoire pour diagnostiquer ce paludisme ?</b></label>
+									<br>
+									<label class="radio-inline">
+										<input type="radio" name="question_labo" id="labo_oui" value="oui" /> oui
+									</label>
+									<label class="radio-inline">
+										<input type="radio" name="question_labo" id="labo_non" value="non" /> non
+									</label>
+								</fieldset>
+								<br>
 
-                    <fieldset class="form-group">
-                        <label><b>Quel traitement avez-vous pris contre le paludisme ?</b></label>
-						<br>
-                        <input type="checkbox" name="op12" id="op12" class="ch2" /> aucun <br>
+								<fieldset class="form-group">
+									<label><b>Quel traitement avez-vous pris contre le paludisme ?</b></label>
+									<br>
+									<input type="radio" name="traitement" value="aucun"  id="op12" class="ch2" /> aucun <br>
 
-                        <input type="checkbox" name="op22" id="op22" class="ch2"/> antipalidéen : <br>
-                        <select class="form-control" id="select22" style="display: none">
-                            <option>Indiquez le médicament si vous vous en souvenez</option>
-                            <option>Malarone</option>
-                            <option>Riamet</option>
-                            <option>Coartem</option>
-                            <option>Nivaquine</option>
-                            <option>Lariam</option>
-                            <option>Doxypalu</option>
-                            <option>Paludrine</option>
-                            <option>Savadrine </option>
-                        </select>
+									<input type="radio" name="traitement"  value="antipaludeen" id="op22" class="ch2"/> antipaludéen : <br>
+									<select class="form-control" name="trtmnt_antipaludeen" id="select22" style="display:none">
+										<option>Indiquez le médicament si vous vous en souvenez</option>
+										<option value="Malarone">Malarone</option>
+										<option value="Riamet">Riamet</option>
+										<option value="Coartem">Coartem</option>
+										<option value="Nivaquine">Nivaquine</option>
+										<option value="Lariam">Lariam</option>
+										<option value="Doxypalu">Doxypalu</option>
+										<option value="Paludrine">Paludrine</option>
+										<option value="Savadrine">Savadrine</option>
+									</select>
 
-                        <input type="checkbox" name="op32" id="op32" class="ch2"/> médecine traditionnelle : <br>
-                        <input type="text" id="op32Text" name="op32Text" placeholder="Indiquez ici quelle médecine traditionnelle vous avez pris." class="form-control" style="display: none"/>
+									<input type="radio" name="traitement"  value="traditionnel" id="op32" class="ch2"/> médecine traditionnelle : <br>
 
-                        <input type="checkbox" name="op42" id="op42" class="ch2"/> autre <br>
-                        <input type="text" id="op42Text" name="op42Text" placeholder="Indiquez ici quel autre traitement vous avez pris." class="form-control" style="display: none"/>
+									<input type="text" id="op32Text" name="trtmnt_tradi" placeholder="Indiquez ici quelle médecine traditionnelle vous avez pris." class="form-control" style="display:none "/>
 
-                    </fieldset>
-					<br>
+									<input type="radio" name="traitement"  value="autre" id=autre" class="ch2"/> autre <br>
+									<input type="text"  id="trtmnt_autre" name="trtmnt_autre" placeholder="Indiquez ici quel autre traitement vous avez pris." class="form-control" style="display: none"/>
 
-                    <fieldset class="form-group">
-                        <label><b>Où avez-vous obtenu votre traitement ?</b></label><br>
-                        <input id="l1" type="radio" name="lieu" value="dans une pharmacie"/> dans une pharmacie<br>
-                        <input id="l2" type="radio" name="lieu" value="auprès d'un vendeur ambulant"/> auprès d'un vendeur ambulant, au marché ou dans la rue <br>
-                        <input id="l3" type="radio" name="lieu" value="auprès d'un guérisseur"/> auprès d'un guérisseur, tradi-praticien
-                    </fieldset>
-					<br>
+								</fieldset>
+								<br>
 
-                    <fieldset>
-                        <label><b>Précisez votre zone d'habitation ?</b></label>
-						<br>
-                        <label> Ville : </label>
-                        <select class="form-control" id="selectVille">
-                            <option>--Choix d'une ville--</option>
-                            <option>Brazzaville</option>
-                            <option>Dolisie</option>
-                            <option>Ewo</option>
-                            <option>Gamboma</option>
-                            <option>Impfondo</option>
-                            <option>Kinkala</option>
-                            <option>Madingou</option>
-                            <option>Makoua</option>
-                            <option>Mossendjo</option>
-                            <option>Nkayi</option>
-                            <option>Ouesso</option>
-                            <option>Owando</option>
-                            <option>Oyo</option>
-                            <option>Pointe-Noire</option>
-                            <option>Sibiti</option>
-                        </select>
-						<br><br>
+								<fieldset class="form-group" id="lieu_traitement">
+									<label><b>Où avez-vous obtenu votre traitement ?</b></label><br>
+									<input id="l1" type="radio" name="lieu" value="dans une pharmacie"/> dans une pharmacie<br>
+									<input id="l2" type="radio" name="lieu" value="auprès d'un vendeur ambulant"/> auprès d'un vendeur ambulant, au marché ou dans la rue <br>
+									<input id="l3" type="radio" name="lieu" value="auprès d'un guérisseur"/> auprès d'un guérisseur, tradi-praticien
+								</fieldset>
+								<br>
 
-                        <label><b>Quartier ou arrondissement : </b></label>
-                        <input type="text" id="quartier_arrondi" name="quartier_arrondi" placeholder="Indiquez ici votre quartier ou votre arrondissement" class="form-control"/>
-                    </fieldset>
-                    <br>
-                </form>
+								<fieldset>
+									<label><b>Précisez votre zone d'habitation ?</b></label>
+									<br>
+									<label> Ville : </label>
+									<select class="form-control" name="ville" id="selectVille">
+										<option>--Choix d'une ville--</option>
+										<option value="Brazzaville">Brazzaville</option>
+										<option value="Dolisie">Dolisie</option>
+										<option value="Ewo">Ewo</option>
+										<option value="Gamboma">Gamboma</option>
+										<option value="Impfondo">Impfondo</option>
+										<option value="Kinkala">Kinkala</option>
+										<option value="Madingou">Madingou</option>
+										<option value="Makoua">Makoua</option>
+										<option value="Mossendjo">Mossendjo</option>
+										<option value="Nkayi">Nkayi</option>
+										<option value="Ouesso">Ouesso</option>
+										<option value="Owando">Owando</option>
+										<option value="Oyo">Oyo</option>
+										<option value="Pointe-Noire">Pointe-Noire</option>
+										<option value="Sibiti">Sibiti</option>
+									</select>
+									<br><br>
 
+									<label><b>Quartier ou arrondissement : </b></label>
+									<input type="text" id="quartier_arrondi" name="quartier_arrondi" placeholder="Indiquez ici votre quartier ou votre arrondissement" class="form-control"/>
+								</fieldset>
+								<br>
+								<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Envoyer</button>
+							</form>
 
 
 		<form action="">
-        	<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Envoyer</button>
+
 		</form>		
 						</div>
 					</div>
@@ -210,7 +212,9 @@
     
 	  </main>
 	</div>
-		
-
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<!-- Bootstrap JavaScript File Include -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/recueil_data.js"></script>
 </body>
 </html>
