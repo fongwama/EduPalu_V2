@@ -56,6 +56,19 @@ $(document).ready(function(){(false)
            content += "<a class='tel' href='tel:"+ results[i].tel1 +"'>"+ results[i].tel1 +"</a>";
            content +=  "&nbsp; <a class='tel' href='tel:"+ results[i].tel2 +"'>"+ results[i].tel2 +"</a>";
            content += "</div>";
+           var pharmacyName = results[i].name.toLowerCase();
+                  if( pharmacyName.indexOf("nuit") == -1 ){
+                    //pharmacy de jour
+                    content += "<i class='fa fa-sun-o fa-2x' aria-hidden='true'></i>";
+                  } else {
+                    //pharmacie de nuit
+                    content += "<i class='fa fa-moon-o fa-2x' aria-hidden='true'></i>";
+                  }
+               content += "</div>";               
+               content += "</div>";
+
+ 
+           content += "</div>";
         };
 
         //Avoid empty result on the view, keep the latest result
