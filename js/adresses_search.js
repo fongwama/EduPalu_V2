@@ -56,7 +56,8 @@ $(document).ready(function(){(false)
            content += "<a class='tel' href='tel:"+ results[i].tel1 +"'>"+ results[i].tel1 +"</a>";
            content +=  "&nbsp; <a class='tel' href='tel:"+ results[i].tel2 +"'>"+ results[i].tel2 +"</a>";
            content += "</div>";
-           var pharmacyName = results[i].name.toLowerCase();
+            content += "<div class='place_image_container'>";
+                  var pharmacyName = results[i].name.toLowerCase();
                   if( pharmacyName.indexOf("nuit") == -1 ){
                     //pharmacy de jour
                     content += "<i class='fa fa-sun-o fa-2x' aria-hidden='true'></i>";
@@ -103,8 +104,8 @@ $(document).ready(function(){(false)
                content += "<a class='tel' href='tel:"+ results[i].tel1 +"'>"+ results[i].tel1 +"</a>";
                content +=  "&nbsp; <a class='tel' href='tel:"+ results[i].tel2 +"'>"+ results[i].tel2 +"</a>";
                content += "</div>"; 
-              content += "<div class='place_image_container'>";
-                  pharmacyName = results[i].name.toLowerCase();
+            content += "<div class='place_image_container'>";
+                  var pharmacyName = results[i].name.toLowerCase();
                   if( pharmacyName.indexOf("nuit") == -1 ){
                     //pharmacy de jour
                     content += "<i class='fa fa-sun-o fa-2x' aria-hidden='true'></i>";
