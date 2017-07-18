@@ -50,7 +50,7 @@
 
 
     <!-- splash screen -->
-    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <plugin name="org.apache.cordova.splashscreen" />
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="1500" />
     <gap:splash platform="android" gap:qualifier="port-ldpi"  src="res/screen/android/screen-ldpi-portrait.png" />
