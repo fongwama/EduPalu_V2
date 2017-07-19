@@ -6,8 +6,6 @@
         version     = "1.3" >
         
     <!-- versionCode is optional and Android only. It must be an integer -->
-    
-
     <name>EduPalu</name>
 
     <description>
@@ -24,19 +22,20 @@
     <!-- icon -->
     <icon src="logo_EduPalu_icon.png" />
 
-
     <!-- no permission required -->
-    <preference name="permissions" value="none" />
+    <preference name="permissions" value="none" />  
+    <preference name="Orientation" value="default"/>  
   
     <!-- plugin for geolocation -->
-    <!-- https://build.phonegap.com/plugins/5538 -->
     <plugin name="cordova-plugin-geolocation" version="2.1.0" />
 
     <!-- plugin for whitelist url / protocols -->
-    <plugin name="cordova-plugin-whitelist" version="*" />    
+    <plugin name="cordova-plugin-whitelist" version="*" />   
+
     <!-- Allow links to web pages to open in a browser -->
-    <allow-intent href="http://*/*" />
+    <allow-intent href="http://fongwama.com" />
     <allow-intent href="https://*/*" />
+
     <!-- Allow tel: links to open the dialer -->
     <allow-intent href="tel:*" />
 
