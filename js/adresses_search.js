@@ -176,8 +176,12 @@ $(document).ready(function(){(false)
         var query_field = $("#input_name").val().trim().toLowerCase().latinise(); 
         
         	//Start searching from the second key press
-        if(query_field.length>1)
+        if(query_field.length>0){
+
         	searchPharma(query_field);
+        }else{
+            $("#results").html("");
+        }
          
     });
 
