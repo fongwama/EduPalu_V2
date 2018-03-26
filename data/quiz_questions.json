@@ -568,8 +568,92 @@ var questions = [
             },
         ]
     },
-]
+    {
+    "text" : "Comment le paludisme est-il transmis?",
+    "time": 15,
+    "answers": [ 
+            {
+                "text" : "Par des piqûres de moustique",
+                "comment": "Le paludisme est transmis par la piqûre du moustique femelle Anopheles infecté, dont l’activité se concentre essentiellement du crépuscule à l’aube. En général, les symptômes surviennent 10 à 15 jours après la piqûre.",
+                "correct": true,
+            },
+            {
+                "text" : "En consommant des aliments contaminés",
+                "comment": "la paludisme n'est pas une maladie transmissible",
+                "correct": false,
+            },
+            {
+                "text" : "En buvant de l’eau contaminée",
+                "comment": "Le paludisme est transmis par l'anophele femelle",
+                "correct": false,
+            },
+        ]
+    },
+    {
+    "text" : "Quels sont les symptômes du paludisme?",
+    "time": 15,
+    "answers": [ 
+            {
+                "text" : "Fièvre et frissons",
+                "comment": "Mauvaise réponse",
+                "correct": false,
+            },
+            {
+                "text" : "Maux de tête",
+                "comment": "Mauvaise réponse",
+                "correct": false,
+            },
+            {
+                "text" : "Nausées et vomissements",
+                "comment": "Mauvaise réponse",
+                "correct": false,
+            },
+            {
+                "text" : "L’ensemble des symptômes décrits",
+                "comment": "L’ensemble des symptômes décrits. Les symptômes d’une infection palustre sans complication se caractérisent par de la fièvre, des frissons, des maux de tête, de la fatigue, des nausées, des vomissements et de la diarrhée. Sans traitement, le paludisme à P. falciparum peut rapidement évoluer vers une affection grave, voire une issue fatale. ",
+                "correct": true,
+            },
+        ]
+    },
+    {
+    "text" : "Les femmes enceintes ne doivent pas prendre de médicaments antipaludiques.",
+    "time": 15,
+    "answers": [ 
+            {
+                "text" : "Vrai",
+                "comment": "Mauvaise réponse",
+                "correct": false,
+            },
+            {
+                "text" : "Faux",
+                "comment": " Pour prévenir le paludisme, l’OMS recommande de traiter les femmes enceintes d’Afrique subsaharienne à la sulfadoxine pyriméthamine lors de chaque consultation prénatale programmée après le premier trimestre (traitement préventif intermittent pendant la grossesse) et d’administrer aux nourrissons 3 doses de traitement parallèlement aux vaccinations systématiques (traitement préventif intermittent du nourrisson).",
+                "correct": false,
+            },
+        ]
+    },
+    {
+    "text" : "Si vous pensez avoir été contaminé, au bout de combien de temps devez vous faire un test?",
+    "time": 15,
+    "answers": [ 
+            {
+                "text" : "Une semaine",
+                "comment": "Mauvaise réponse",
+                "correct": false,
+            },
+            {
+                "text" : "3 jours",
+                "comment": "Le diagnostic et le traitement rapides par un antipaludique efficace et sûr s’avèrent nécessaires pour prévenir les complications potentiellement mortelles. L’OMS recommande d’effectuer, soit un diagnostic sous microscope, soit un test de diagnostic rapide dans les 24 heures qui suivent l’apparition d’une fièvre chez tous les patients présentant un cas présumé de paludisme avant d’administrer le traitement.",
+                "correct": true,
+            },
+            {
+                "text" : "24 heures",
+                "comment": "Mauvaise réponse",
+                "correct": false,
+            },
+        ]
+    },
 
+]
 
 /*
     {
