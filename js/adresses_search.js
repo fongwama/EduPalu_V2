@@ -160,14 +160,7 @@ $(document).ready(function(){(false)
 
     } 
 
-    // When search by pharmacy name
-    $("#btn_search").click(function() {
-
-            // clean input field
-        var query_field = $("#input_name").val().trim().toLowerCase().latinise(); 
-        searchPharma(query_field);
-
-    });
+  
 
     // Search at every key press
     $("#input_name").keyup( function() {
