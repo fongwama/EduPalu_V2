@@ -47,7 +47,7 @@
     <access origin="tel:*" launch-external="yes" />
 
     <preference name="fullscreen" value="false" />
-
+    <plugin name="cordova-plugin-splashscreen"   source="npm" spec="2.1.0" />
 
     <!-- splash screen -->
     <!--<gap:plugin name="org.apache.cordova.splashscreen" />

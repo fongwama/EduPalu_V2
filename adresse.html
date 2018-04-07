@@ -17,10 +17,15 @@
 
 	<!-- Always shows a header, even in smaller screens. -->
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button">
+			<i class="fa fa-bars"></i>
+
+		</div>
 	  <header class="mdl-layout__header">
 	    <div class="mdl-layout__header-row">
 	      <!-- Title -->
-	      <span class="mdl-logo"><a href="index.html"><img src="img/logo.png" alt=""></a></span>
+	      <span class="mdl-logo"><a href="index.html"><img src="img/logo.png" alt=""></a>
+	      </span>
 	      <!-- Add spacer, to align navigation to the right -->
 	      <div class="mdl-layout-spacer"></div>
 	      <!-- Navigation. We hide it in small screens. -->
@@ -29,19 +34,20 @@
           	  	<a href="adresse.html"><i class="material-icons">location_on</i></a>
         	  </label>
 				<!-- Right aligned menu below button -->
-				<button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+				<button id="demo-menu-lower-right"
+				        class="mdl-button mdl-js-button mdl-button--icon">
 				  <i class="material-icons">more_vert</i>
 				</button>
 				<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
 				    for="demo-menu-lower-right">
 				  <li class="mdl-menu__item"><a href="comment.html">Comment</a></li>
 				  <li class="mdl-menu__item"><a href="qui.html">A propos</a></li>
-				</ul>				
-			</div>	
+				</ul>
+			</div>
 	      <!-- Navigation. We hide it in small screens. -->
 	      <nav class="mdl-navigation mdl-layout--large-screen-only">
 	        <a class="mdl-navigation__link" href="adresse.html">Rechercher une pharmacie/CSi</a>
-	        <a class="mdl-navigation__link" href="adresse_near.html">La plus proche de moi</a>	        
+	        <a class="mdl-navigation__link" href="adresse_near.html">La plus proche de moi</a>
 	        <a class="mdl-navigation__link" href="ajout_pharma.html">Ajouter un centre de santé</a>
 	        <a class="mdl-navigation__link" href="comment.html">Comment ?</a>
 	        <a class="mdl-navigation__link" href="qui.html">A propos</a>
@@ -49,25 +55,42 @@
 	    </div>
 	  </header>
 	  <div class="mdl-layout__drawer">
-	    <span class="mdl-layout-title"><img src="img/logo2.png" alt="EduPalu logo"></span>
+	    <span class="mdl-layout-title"><img src="img/logo2.png" alt=""></span>
 	    <nav class="mdl-navigation">
-	      <a class="mdl-navigation__link" href="comprendre.html"><i class="material-icons">description</i>Comprendre</a>
-	      <a class="mdl-navigation__link" href="se_proteger.html"><i class="material-icons">warning</i>Se protéger</a>
-	      <a class="mdl-navigation__link" href="diagnostiquer.html"><i class="material-icons">find_in_page</i>Diagnostiquer</a>	      
-	      <a class="mdl-navigation__link" href=""><i class="material-icons">healing</i>Se soigner</a>
-	      <a class="mdl-navigation__link" href="adresse.html"><i class="material-icons">search</i>Rechecher </a>	    	      	      
-	      <a class="mdl-navigation__link" href="question_reponse.html"><i class="material-icons">forum</i>Questions / Réponses</a>
-	      <a class="mdl-navigation__link" href="quiz_play.html"><i class="material-icons">games</i>Le quiz</a>
-	      <a class="mdl-navigation__link" href=""><i class="material-icons">extension</i>Chasse aux parasites</a>	      			     
-	      <a class="mdl-navigation__link" href="comment.html"><i class="material-icons">copyright</i>Comment ?</a>
-	      <a class="mdl-navigation__link" href="qui.html"><i class="material-icons">info</i> A propos</a>
+	      <a class="mdl-navigation__link" href="comprendre.html"><i style="font-size:1.6em;" class="material-icons fa fa-file"></i> Comprendre</a>
+	      <a class="mdl-navigation__link" href="se_proteger.html"><i style="font-size:1.6em;" class="material-icons fa fa-exclamation-triangle"></i> Se protéger</a>
+
+	      <a class="mdl-navigation__link" href="diagnostiquer.html">
+	      	<i style="font-size:1.6em;" class="material-icons fa fa-stethoscope"></i> Diagnostiquer</a>
+
+	      <a class="mdl-navigation__link" href="se_soigner.html">
+			<i style="font-size:1.6em;" class="material-icons fa fa-heart"></i>
+	       Se soigner</a>
+	      <a class="mdl-navigation__link" href="adresse.html">
+			<i style="font-size:1.6em;" class="material-icons fa fa-search"></i>
+	      Rechecher </a>
+	      <a class="mdl-navigation__link" href="question_reponse.html">
+	      	<i style="font-size:1.6em;" class="material-icons fa fa-comments"></i>
+	      Questions / Réponses</a>
+	      <a class="mdl-navigation__link" href="quiz_play.html"><i style="font-size:1.6em;" class="material-icons fa fa-gamepad"></i>
+	      Le quiz</a>
+	      <a class="mdl-navigation__link" href="chasse_para_start.html">
+	      <i style="font-size:1.6em;" class="material-icons fa fa-puzzle-piece"></i>
+	  	Chasse aux parasites</a>
+	      <a class="mdl-navigation__link" href="comment.html">
+	      	<i style="font-size:1.6em;" class="material-icons fa fa-copyright"></i>
+
+	      Comment ?</a>
+	      <a class="mdl-navigation__link" href="qui.html">
+			<i style="font-size:1.6em;" class="material-icons fa fa-info"></i>
+	        A propos</a>
 	    </nav>
 	  </div>  
 	    <div class="page-content">	
 			<div class="mdl-grid bg_search">
 			  <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
 				<div class="search">
-				    <i class="material-icons blue_color">search</i>
+				    <i class="material-icons blue_color fa fa-search"></i>
 				    <input type="text" id="input_search" name="input_search" placeholder="Rechercher une pharmacie, un CSI, un hôpital...">
 				</div>
 		<table id="search_options_container" class="table_center" style="display: none">
@@ -152,6 +175,8 @@
 <script type="text/javascript" src="data/places_db.json"></script>
 <script type="text/javascript" src="data/places_hospital_db.json"></script>
 <script type="text/javascript" src="js/adresses_search.js"></script>
+<script type="text/javascript" src="js/fontawesome-all.min.js"></script>	
+<script type="text/javascript" src="js/material.min.js"></script>
 
 </body>
 </html>
