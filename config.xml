@@ -21,7 +21,7 @@
     <!-- build only for android -->
     <platform name="ios" />
     <platform name="android" />
-    
+
     <!-- icon -->
     <icon src="logo_EduPalu_icon.png" />
 
@@ -34,6 +34,9 @@
     <!--    <plugin name="cordova-plugin-geolocation" source="pgb" /> -->
     <plugin name="cordova-plugin-geolocation" spec="~4.0.1" />
     <!-- <plugin spec=“https://github.com/apache/cordova-plugin-geolocation.git” source=“git” /> -->
+
+    <plugin name="cordova-plugin-google-analytics" spec="~1.8.2" />
+
 
     <!-- plugin for whitelist url / protocols -->
     <plugin name="cordova-plugin-whitelist" />
@@ -53,7 +56,7 @@
     <plugin name="cordova-plugin-splashscreen"   source="npm" spec="2.1.0" />
 
     <!-- splash screen -->
-    <!--<gap:plugin name="org.apache.cordova.splashscreen" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="1500" />
     <gap:splash platform="android" gap:qualifier="port-ldpi"  src="res/screen/android/screen-ldpi-portrait.png" />
@@ -64,7 +67,7 @@
     <gap:splash platform="android" gap:qualifier="port-xxxhdpi" src="res/screen/android/screen-xxxhdpi-portrait.png" />
     <gap:splash src="splash.png" />
 
-    <preference name="stay-in-webview" value="false"/> -->
+    <preference name="stay-in-webview" value="false"/>
 
 </widget>
 
