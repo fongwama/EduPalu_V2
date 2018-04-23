@@ -19,8 +19,9 @@
     </author>
 
     <!-- build only for android -->
+    <platform name="ios" />
     <platform name="android" />
-
+    
     <!-- icon -->
     <icon src="logo_EduPalu_icon.png" />
 
