@@ -31,7 +31,8 @@
     <!-- plugin for geolocation -->
     <!-- https://build.phonegap.com/plugins/5538 -->
     <!--    <plugin name="cordova-plugin-geolocation" source="pgb" /> -->
-    <plugin name="org.apache.cordova.geolocation" spec="" source="npm" />
+    <!-- <plugin name="org.apache.cordova.geolocation" spec="" source="npm" /> -->
+    <plugin spec=“https://github.com/apache/cordova-plugin-geolocation.git” source=“git” />
 
     <!-- plugin for whitelist url / protocols -->
     <plugin name="cordova-plugin-whitelist" />
