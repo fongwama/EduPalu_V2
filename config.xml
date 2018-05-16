@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.fcrm.edupalu"
+        id          = "com.fongwama.edupalu"
         versionCode = "13" 
         version     = "1.3" >
         
@@ -11,14 +11,15 @@
     <name>EduPalu</name>
 
     <description>
-        EduPalu est une application d'information et d'éducation sur le paludisme au Congo
+        Application d’éducation sur le paludisme et d’accès aux services de santé au Congo. / Application of education on malaria and access to health services in Congo.
     </description>
 
-    <author href="http://www.Fongwama.com" email="mbote@Fongwama.com">
+    <author href="http://www.fongwama.com" email="mbote@Fongwama.com">
         Fongwama 
     </author>
 
     <!-- build only for android -->
+    <platform name="ios" />
     <platform name="android" />
 
     <!-- icon -->
@@ -30,7 +31,12 @@
   
     <!-- plugin for geolocation -->
     <!-- https://build.phonegap.com/plugins/5538 -->
-    <plugin name="cordova-plugin-geolocation" source="pgb" />
+    <!--    <plugin name="cordova-plugin-geolocation" source="pgb" /> -->
+    <plugin name="cordova-plugin-geolocation" spec="~4.0.1" />
+    <!-- <plugin spec=“https://github.com/apache/cordova-plugin-geolocation.git” source=“git” /> -->
+
+    <plugin name="cordova-plugin-google-analytics" spec="~1.8.2" />
+
 
     <!-- plugin for whitelist url / protocols -->
     <plugin name="cordova-plugin-whitelist" />
@@ -47,10 +53,10 @@
     <access origin="tel:*" launch-external="yes" />
 
     <preference name="fullscreen" value="false" />
-
+    <plugin name="cordova-plugin-splashscreen"   source="npm" spec="2.1.0" />
 
     <!-- splash screen -->
-    <!--<gap:plugin name="org.apache.cordova.splashscreen" />
+    <plugin name="cordova-plugin-splashscreen" spec="~5.0.2" />
     <preference name="SplashScreen" value="splash" />
     <preference name="SplashScreenDelay" value="1500" />
     <gap:splash platform="android" gap:qualifier="port-ldpi"  src="res/screen/android/screen-ldpi-portrait.png" />
@@ -61,7 +67,7 @@
     <gap:splash platform="android" gap:qualifier="port-xxxhdpi" src="res/screen/android/screen-xxxhdpi-portrait.png" />
     <gap:splash src="splash.png" />
 
-    <preference name="stay-in-webview" value="false"/> -->
+    <preference name="stay-in-webview" value="false"/>
 
 </widget>
 
