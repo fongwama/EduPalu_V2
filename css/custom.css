@@ -351,3 +351,9 @@ a:hover {
 .mdl-menu__item:hover {
   background-color: rgb(129, 199, 255) !important;
 }
+.blog-post-detail-page .blog-post__img {
+  border-radius: 10px;
+  height: auto;
+  margin-bottom: 40px;
+  width: 100%;
+}
