@@ -269,8 +269,8 @@
 }
 img {
   /* vertical-align: middle; */
-  width: 100%;
-  height: auto;
+  /*width: 100%;
+  height: auto;*/
 }
 .mdl-layout__drawer > .mdl-layout__title, .mdl-layout__drawer > .mdl-layout-title > img {
 width: auto;
