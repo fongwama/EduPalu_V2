@@ -351,9 +351,16 @@ a:hover {
 .mdl-menu__item:hover {
   background-color: rgb(129, 199, 255) !important;
 }
-.blog-post-detail-page .blog-post__img {
-  border-radius: 10px;
-  height: auto;
-  margin-bottom: 40px;
-  width: 100%;
+
+.main_size{
+  width: 100% !important;
+}
+.main_comprendre{
+  background: url('../img/labo.jpg') center / cover no-repeat #46B6AC;    
+}
+.main_diagnostiquer{
+  background: url('../img/technicien_microscope.jpg') center / cover no-repeat #46B6AC;      
+}
+.main_soigner{
+  background: url('../img/vaccin.jpg') center / cover no-repeat #46B6AC;      
 }
