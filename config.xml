@@ -59,8 +59,6 @@
     <preference name="fullscreen" value="false" />
     <plugin name="cordova-plugin-splashscreen"   source="npm" spec="2.1.0" />
 
-    <!-- GA plugin -->
-    <gap:plugin name="com.adobe.plugins.gaplugin" />
 
     <!-- splash screen -->
     <plugin name="cordova-plugin-splashscreen" spec="~5.0.2" />
