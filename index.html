@@ -225,6 +225,14 @@
 	  </main>
 
 	</div>
+<script>
+	var gaPlugin;
+
+function onDeviceReady() {
+    gaPlugin = window.plugins.gaPlugin;
+    gaPlugin.init(successHandler, errorHandler, "UA-118040603-1", 10);
+}
+</script>	
 		
 <!-- inclusion  des fichiers javascript -->
 <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
