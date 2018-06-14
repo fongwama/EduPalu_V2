@@ -34,6 +34,7 @@
     <plugin name="cordova-plugin-geolocation" version="2.1.0" />
     <!-- <plugin spec=“https://github.com/apache/cordova-plugin-geolocation.git” source=“git” /> -->
     <plugin name="cordova-plugin-google-analytics" spec="~1.8.2" />
+    <preference name="android-minSdkVersion" value="26" />
 
 
     <!-- plugin for whitelist url / protocols -->
